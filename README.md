@@ -34,7 +34,32 @@ The app will be an interactive questionare that hides beneath a playfull layer t
 An example of what the apps will look like can be found [W.I.P]()
 
 ## Architecture
-W.I.P
+```
+root
+│   README.md
+│   package.json   
+|
+└───node_modules
+│
+└───public
+│    │   index.html
+│    │   manifest.json
+│   
+└───server
+|    │   index.js
+|
+└───src
+|    |   index.js
+|    |   index.css
+|    |
+|    └───components
+|    |    |   component1.js
+|    |    |   component2.js
+|    |
+|    └───views
+|         |   view1.jsx
+|         |   view2.jsx
+```
 
 ## React Components
 Here you can find a list of planned components, we plan to split jsx and logical code staying true to the MVVM pattern.

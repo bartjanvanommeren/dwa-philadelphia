@@ -19,10 +19,10 @@ npm install
 npm start
 ```
 ## Requirements
-# MUST
+### MUST
 - The app informs the users about sports
 - The app will be made for desktop use
-# SHOULD
+### SHOULD
 - The user has the option to navigate back
 - The app suggests sports that will fit the user
 - The app shows the user where he can signup for specific sports

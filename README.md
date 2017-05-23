@@ -61,7 +61,6 @@ Example page used as placeholder.
 Libary name | Version
 --- | ---
 [NodeJS](https://nodejs.org/en/) | 6.10.0
-react 
-velocity
-express
-nodemon
+[React](https://facebook.github.io/react/) | 15.5.4
+[Velocity React](https://github.com/twitter-fabric/velocity-react) | 1.3.3
+[Express](https://expressjs.com/) | 4.15.3

@@ -1,2 +1,2 @@
-# dwa-philadelphia
-Shared repo for the HAN DWA project
+# multi-minor-philadelphia
+Shared repo for the HAN minor project

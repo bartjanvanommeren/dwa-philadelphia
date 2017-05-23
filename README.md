@@ -53,12 +53,14 @@ root
 |    |   index.css
 |    |
 |    └───components
-|    |    |   component1.js
-|    |    |   component2.js
-|    |
-|    └───views
-|         |   view1.jsx
-|         |   view2.jsx
+|    |    └───component1
+|    |    |    |   component1.js
+|    |    |    |   component1.scss
+|    |    |
+|    |    └───component2
+|    |    |    |   component2.js
+|    |    |    |   component2.scss
+|    |    |
 ```
 
 ## React Components

@@ -34,7 +34,32 @@ The app will be an interactive questionare that hides beneath a playfull layer t
 An example of what the apps will look like can be found [W.I.P]()
 
 ## Architecture
-W.I.P
+```
+root
+│   README.md
+│   package.json   
+|
+└───node_modules
+│
+└───public
+│    │   index.html
+│    │   manifest.json
+│   
+└───server
+|    │   index.js
+|
+└───src
+|    |   index.js
+|    |   index.css
+|    |
+|    └───components
+|    |    |   component1.js
+|    |    |   component2.js
+|    |
+|    └───views
+|         |   view1.jsx
+|         |   view2.jsx
+```
 
 ## React Components
 Here you can find a list of planned components, we plan to split jsx and logical code staying true to the MVVM pattern.
@@ -61,7 +86,6 @@ Example page used as placeholder.
 Libary name | Version
 --- | ---
 [NodeJS](https://nodejs.org/en/) | 6.10.0
-react 
-velocity
-express
-nodemon
+[React](https://facebook.github.io/react/) | 15.5.4
+[Velocity React](https://github.com/twitter-fabric/velocity-react) | 1.3.3
+[Express](https://expressjs.com/) | 4.15.3

@@ -66,17 +66,17 @@ root
 ## React Components
 Here you can find a list of planned components, we plan to split jsx and logical code staying true to the MVVM pattern.
 
-Header -
-A standard component present on every page
+Door -
+Reusable component, can contain, can be animated navigates to new page when clicked, can play audio, is dynamic in content.
 
-InfoPage -
-A component that'll contain everything needed for the info page (we can think about things like Gmaps, Youtube and external links)
+BackButton -
+Handles back navigation
 
-OptionsPage -
-A component that'll contain everything needed for the options page
+VideoPlayer -
+Can play a video most likely embedded YT
 
-SportsPage -
-A component that'll contain everything needed for the sports page
+Room -
+Container component can either contain door type content or choice type content
 
 ## Routes
 W.I.P

@@ -1,15 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {Router, Route, browserHistory} from 'react-router';
+import {Router, Route, IndexRoute, browserHistory} from 'react-router';
 
-import App from './App';
+import App from './components/App';
+import Room from './components/Room';
 import NotFound from './components/NotFound';
 import registerServiceWorker from './registerServiceWorker';
 import './index.css';
 
 ReactDOM.render((
     <Router history={browserHistory}>
-        <Route path="/" component={App}/>
+        <Route exact path="/" component={App}>
+            <IndexRoute component={Room}/>
+        </Route>
         <Route path="*" component={NotFound}/>
     </Router>
 ), document.getElementById('root'));

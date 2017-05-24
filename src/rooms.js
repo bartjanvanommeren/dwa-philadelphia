@@ -26,7 +26,7 @@ export default {
                         imagePath: 'pathToImage',
                         audioPath: 'pathToAudio',
                         nextQuestion: {
-                            title: 'Wil je met of zonder water sporten?',
+                            question: 'Wil je met of zonder water sporten?',
                             options: [{
                                 title: 'Met water',
                                 imagePath: 'pathToImage',
@@ -35,6 +35,15 @@ export default {
                                     {name: 'Baantjes zwemmen'},
                                     {name: 'Vrij zwemmen'},
                                     {name: 'Aqua gym'}
+                                ]
+                            }, {
+                                title: 'Zonder water',
+                                imagePath: 'pathToImage',
+                                audioPath: 'pathToAudio',
+                                sports: [
+                                    {name: 'Fitness'},
+                                    {name: 'Yoga'},
+                                    {name: 'Dansen'}
                                 ]
                             }]
                         }

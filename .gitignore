@@ -81,3 +81,9 @@ yarn-error.log*
 
 # webstorm ide
 /.idea
+
+# css
+src/**/*.css
+
+# JSHint config
+.jshintrc

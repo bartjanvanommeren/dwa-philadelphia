@@ -4,7 +4,7 @@ export default {
         title: 'Alleen',
         imagePath: 'pathToImage',
         audioPath: 'pathToAudio',
-        nextQuestion: {
+        nextRoom: {
             question: 'Wil je met een bal of zonder bal sporten?',
             options: [{
                 title: 'Met een bal',
@@ -19,13 +19,13 @@ export default {
                 title: 'Zonder een bal',
                 imagePath: 'pathToImage',
                 audioPath: 'pathToAudio',
-                nextQuestion: {
+                nextRoom: {
                     question: 'Wil je binnen of buiten sporten?',
                     options: [{
                         title: 'Binnen',
                         imagePath: 'pathToImage',
                         audioPath: 'pathToAudio',
-                        nextQuestion: {
+                        nextRoom: {
                             question: 'Wil je met of zonder water sporten?',
                             options: [{
                                 title: 'Met water',
@@ -64,7 +64,7 @@ export default {
         title: 'Samen',
         imagePath: 'pathToImage',
         audioPath: 'pathToAudio',
-        nextQuestion: {
+        nextRoom: {
             question: 'Wil je binnen of buiten sporten?',
             options: [{
                 title: 'Binnen',

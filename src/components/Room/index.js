@@ -31,7 +31,7 @@ class Room extends Component {
         return (
             <div>
                 <h1>Room</h1>
-                <p>{this.state.question}</p>
+                <p>{this.state.currentRoom.question}</p>
                 {doors}
             </div>
         );

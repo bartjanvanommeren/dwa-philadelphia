@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {browserHistory} from 'react-router';
 
 import Door from '../Door';
 import rooms from '../../rooms';
@@ -8,14 +9,56 @@ class Room extends Component {
 
     constructor(props) {
         super(props);
+
         this.state = {
             rooms: rooms,
-            currentRoom: rooms
+            currentRoom: {
+                options: []
+            }
         };
     }
 
-    nextRoom = (room) => {
-        this.setState({currentRoom: room});
+    componentDidMount() {
+        this.initializeComponent(0);
+    }
+
+    componentWillReceiveProps(nextProps) {
+        const roomId = parseInt(nextProps.params.roomId);
+
+        this.initializeComponent(roomId);
+    }
+
+    initializeComponent = (id) => {
+        let currentRoom = this.findRoom(this.state.rooms, id);
+
+        this.setState({currentRoom: currentRoom});
+    };
+
+    findRoom = (room, id) => {
+        let result;
+
+        if (id === room.id) {
+            return room;
+        } else {
+            if (room.options !== undefined) {
+                for (let i = 0; i < room.options.length; i++) {
+                    const option = room.options[i];
+
+                    if (option.nextRoom !== undefined) {
+                        result = this.findRoom(option.nextRoom, id);
+
+                        if (result !== false) {
+                            return result
+                        }
+                    }
+                }
+            }
+            return false;
+        }
+    };
+
+    goToRoom = (id) => {
+        browserHistory.push('/room/' + id);
     };
 
     render() {
@@ -25,13 +68,14 @@ class Room extends Component {
                 title={option.title}
                 imagePath={option.imagePath}
                 audioPath={option.audioPath}
-                nextRoom={this.nextRoom.bind(this, option.nextQuestion)}/>
+                goToRoom={(option.nextRoom !== undefined) ?
+                    this.goToRoom.bind(this, option.nextRoom.id) : ''}/>
         ));
 
         return (
             <div>
                 <h1>Room</h1>
-                <p>{this.state.question}</p>
+                {this.state.currentRoom.question}
                 {doors}
             </div>
         );

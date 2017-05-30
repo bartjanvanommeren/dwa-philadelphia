@@ -20,17 +20,16 @@ class Room extends Component {
     }
 
     componentDidMount() {
-        this.initializeComponent(0);
+        this.initializeComponent(this.props);
     }
 
     componentWillReceiveProps(nextProps) {
-        const roomId = parseInt(nextProps.params.roomId);
-
-        this.initializeComponent(roomId);
+        this.initializeComponent(nextProps);
     }
 
-    initializeComponent = (id) => {
-        let currentRoom = this.findRoom(this.state.rooms, id);
+    initializeComponent = (props) => {
+        const roomId = parseInt(props.params.roomId, 10);
+        let currentRoom = this.findRoom(this.state.rooms, roomId);
 
         this.setState({currentRoom: currentRoom});
     };
@@ -62,6 +61,10 @@ class Room extends Component {
         browserHistory.push('/room/' + id);
     };
 
+    goToSports = (roomId, doorId) => {
+        browserHistory.push('/sports/' + roomId + '/' + doorId);
+    };
+
     goBack = () => {
         browserHistory.go(-1);
     };
@@ -74,7 +77,8 @@ class Room extends Component {
                 imagePath={option.imagePath}
                 audioPath={option.audioPath}
                 goToRoom={(option.nextRoom !== undefined) ?
-                    this.goToRoom.bind(this, option.nextRoom.id) : ''}/>
+                    this.goToRoom.bind(this, option.nextRoom.id) :
+                    this.goToSports.bind(this, this.state.currentRoom.id, i)}/>
         ));
 
         const backButton = (this.state.currentRoom.id !== 0) ?

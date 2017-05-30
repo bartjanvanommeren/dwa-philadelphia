@@ -10,8 +10,7 @@ import './index.css';
 
 ReactDOM.render((
     <Router history={browserHistory}>
-        <Route exact path="/" component={App}>
-            <IndexRoute component={Room}/>
+        <Route path="/" component={App}>
         </Route>
         <Route path="*" component={NotFound}/>
     </Router>

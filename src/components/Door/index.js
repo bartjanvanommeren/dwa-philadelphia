@@ -10,7 +10,7 @@ class Door extends Component {
         const audioPath = this.props.imagePath;
 
         return (
-            <div onClick={this.props.doorClicked}>
+            <div onClick={this.props.goToRoom}>
                 <h1>Door</h1>
                 <div>
                     {title}<br/>

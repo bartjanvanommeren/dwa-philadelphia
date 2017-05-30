@@ -1,7 +1,9 @@
 import React, {Component} from 'react';
+import {browserHistory} from 'react-router';
 
 import rooms from '../../rooms';
-import Sport from "../Sport/index";
+import Sport from "../Sport";
+import BackButton from "../BackButton";
 
 class Sports extends Component {
 
@@ -18,7 +20,7 @@ class Sports extends Component {
         const roomId = parseInt(this.props.params.roomId, 10);
         const doorId = parseInt(this.props.params.doorId, 10);
 
-        const sports = this.findSports(this.state.rooms, roomId);
+        const sports = this.findSports(this.state.rooms, roomId, doorId);
         this.setState({sports: sports});
     }
 
@@ -26,14 +28,14 @@ class Sports extends Component {
         let result;
 
         if (roomId === room.id) {
-            return room.options[0].sports;
+            return room.options[doorId].sports;
         } else {
             if (room.options !== undefined) {
                 for (let i = 0; i < room.options.length; i++) {
                     const option = room.options[i];
 
                     if (option.nextRoom !== undefined) {
-                        result = this.findSports(option.nextRoom, roomId);
+                        result = this.findSports(option.nextRoom, roomId, doorId);
 
                         if (result !== false) {
                             return result
@@ -43,6 +45,10 @@ class Sports extends Component {
             }
             return false;
         }
+    };
+
+    goBack = () => {
+        browserHistory.go(-1);
     };
 
     render() {
@@ -55,6 +61,7 @@ class Sports extends Component {
             <div>
                 <h1>Sports</h1>
                 {sports}
+                <BackButton goBack={this.goBack.bind(this)}/>
             </div>
         );
     }

@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {browserHistory} from 'react-router';
 
 import Door from '../Door';
+import BackButton from '../BackButton';
 import rooms from '../../rooms';
 import './index.css';
 
@@ -61,6 +62,10 @@ class Room extends Component {
         browserHistory.push('/room/' + id);
     };
 
+    goBack = () => {
+        browserHistory.go(-1);
+    };
+
     render() {
         const doors = this.state.currentRoom.options.map((option, i) => (
             <Door
@@ -72,15 +77,19 @@ class Room extends Component {
                     this.goToRoom.bind(this, option.nextRoom.id) : ''}/>
         ));
 
+        const backButton = (this.state.currentRoom.id !== 0) ?
+            <BackButton
+                goBack={this.goBack.bind(this)}/> : '';
+
         return (
             <div>
                 <h1>Room</h1>
                 {this.state.currentRoom.question}
                 {doors}
+                {backButton}
             </div>
         );
     }
-
 }
 
 export default Room;

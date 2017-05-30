@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {browserHistory} from 'react-router';
 
 import rooms from '../../rooms';
-import Sport from "../Sport";
+import Sport from "./Sport";
 import BackButton from "../BackButton";
 
 class Sports extends Component {

@@ -3,6 +3,7 @@ import {browserHistory} from 'react-router';
 
 import Door from '../Door';
 import BackButton from '../BackButton';
+import HelpAudio from '../HelpAudio';
 import rooms from '../../rooms';
 import './index.css';
 
@@ -87,10 +88,17 @@ class Room extends Component {
 
         return (
             <div>
-                <h1>Room</h1>
-                {this.state.currentRoom.question}
-                {doors}
-                {backButton}
+                <div id="wall">
+                    <div id="audio">
+                        <HelpAudio/>
+                    </div>
+                    <div id="doors">
+                        {doors}
+                    </div>
+                </div>
+                <div id="floor">
+                    {backButton}
+                </div>
             </div>
         );
     }

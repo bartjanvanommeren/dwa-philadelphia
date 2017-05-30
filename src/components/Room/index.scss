@@ -1,0 +1,22 @@
+#wall {
+  width: 100%;
+  height: 70vh;
+  background: red;
+}
+
+#floor {
+  width: 100%;
+  height: 30vh;
+  background: yellow;
+}
+
+#doors {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+#audio {
+  float: left;
+  margin: 10px;
+}

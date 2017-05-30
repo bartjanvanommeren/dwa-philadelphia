@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 
+import DoorAudio from './DoorAudio';
+import doorImage from './deur2.svg';
 import './index.css';
 
 class Door extends Component {
@@ -10,13 +12,13 @@ class Door extends Component {
         const audioPath = this.props.imagePath;
 
         return (
-            <div onClick={this.props.goToRoom}>
-                <h1>Door</h1>
-                <div>
-                    {title}<br/>
-                    {imagePath}<br/>
-                    {audioPath}
+            <div className="door">
+                <div className="door-title">
+                    <h1>{title}</h1>
                 </div>
+                <DoorAudio/>
+                <img src={doorImage}
+                     onClick={this.props.goToRoom}/>
             </div>
         );
     }

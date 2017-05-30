@@ -59,9 +59,14 @@ class Sports extends Component {
 
         return (
             <div>
-                <h1>Sports</h1>
-                {sports}
-                <BackButton goBack={this.goBack.bind(this)}/>
+                <div id="wall">
+                    <div id="doors">
+                        {sports}
+                    </div>
+                </div>
+                <div id="floor">
+                    <BackButton goBack={this.goBack.bind(this)}/>
+                </div>
             </div>
         );
     }

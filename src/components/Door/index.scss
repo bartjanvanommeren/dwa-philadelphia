@@ -1,0 +1,13 @@
+.door {
+  width: 30%;
+
+  .door-title {
+    text-align: center;
+    background: yellow;
+    padding: 20px;
+  }
+
+  > img {
+    cursor: pointer;
+  }
+}

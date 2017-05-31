@@ -14,29 +14,34 @@ class Information extends Component {
             sport: '',
             sportInformation: []
         }
-    }
+    };
 
     componentDidMount() {
         const sport = sportsInformation[this.props.params.sportName];
         if (sport !== undefined)
             this.setState({sport: this.props.params.sportName,
                 sportInformation: sport});
-    }
+    };
 
     goBack = () => {
         browserHistory.go(-1);
     };
 
     render() {
+        const youtubeOpts = {
+            width: '920', //640
+            height: '560' //390
+        };
+        
         return (
             <div>
-            <div className="videoContainer">
-                <h1>{this.state.sport}</h1>
-                <Youtube videoId={this.state.sportInformation.videoId}/>
-                <p>{this.state.sportInformation.information}</p>
-            </div>
-            <div className="like"></div>
-            <div className="dislike"></div>
+                <div className="videoContainer">
+                    <h1>{this.state.sport}</h1>
+                    <Youtube videoId={this.state.sportInformation.videoId} opts={youtubeOpts}/>
+                    <p>{this.state.sportInformation.information}</p>
+                </div>
+                <div className="like" onClick={this.goBack}></div>
+                <div className="dislike" onClick={this.goBack}></div>
             </div>
         )
     }

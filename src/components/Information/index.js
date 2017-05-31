@@ -29,11 +29,14 @@ class Information extends Component {
 
     render() {
         return (
+            <div>
             <div className="videoContainer">
                 <h1>{this.state.sport}</h1>
                 <Youtube videoId={this.state.sportInformation.videoId}/>
                 <p>{this.state.sportInformation.information}</p>
-                <BackButton goBack={this.goBack.bind(this)}/>
+            </div>
+            <div className="like"></div>
+            <div className="dislike"></div>
             </div>
         )
     }

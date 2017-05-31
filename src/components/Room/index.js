@@ -3,7 +3,8 @@ import {browserHistory} from 'react-router';
 
 import Door from '../Door';
 import BackButton from '../BackButton';
-import HelpAudio from '../HelpAudio';
+import Audio from '../Audio';
+import audioPath from './am-i-totally-screwed-or.wav';
 import rooms from '../../rooms';
 import './index.css';
 
@@ -90,7 +91,7 @@ class Room extends Component {
             <div>
                 <div id="wall">
                     <div id="help-audio">
-                        <HelpAudio/>
+                        <Audio audioPath={audioPath}/>
                     </div>
                     <div id="doors">
                         {doors}

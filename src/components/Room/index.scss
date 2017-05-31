@@ -1,22 +1,22 @@
 #wall {
-  width: 100%;
-  height: 70vh;
-  background: red;
+    width: 100%;
+    height: 70vh;
+    background: #ffffdd;
 }
 
 #floor {
-  width: 100%;
-  height: 30vh;
-  background: yellow;
+    width: 100%;
+    height: 30vh;
+    background: #dfc2a4;
 }
 
 #doors {
-  display: flex;
-  justify-content: space-around;
-  padding: 10px;
+    height: 70vh;
+    display: flex;
+    justify-content: space-around;
 }
 
 #audio {
-  float: left;
-  margin: 10px;
+    float: left;
+    margin: 10px;
 }

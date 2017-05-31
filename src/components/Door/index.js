@@ -17,9 +17,8 @@ class Door extends Component {
                     <h1>{title}</h1>
                 </div>
                 <DoorAudio/>
-                <img src={doorImage}
-                     alt="door"
-                     onClick={this.props.goToRoom}/>
+                <div className="doorImg"><img src={doorImage} alt="door"
+                     onClick={this.props.goToRoom}/></div>
             </div>
         );
     }

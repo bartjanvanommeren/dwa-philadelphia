@@ -1,12 +1,18 @@
 .door {
-  width: 30%;
-
-  .door-title {
-    text-align: center;
-    padding: 20px;
-  }
-
-  > img {
-    cursor: pointer;
-  }
+    position: relative;
+    width: 30%;
+    padding-top: 10px;
+    .door-title {
+        text-align: center;
+        padding: 20px;
+    }
+    > .doorImg {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        cursor: pointer;
+        > img {
+            margin-bottom: -16.5%;
+        }
+    }
 }

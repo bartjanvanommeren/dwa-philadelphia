@@ -89,7 +89,7 @@ class Room extends Component {
         return (
             <div>
                 <div id="wall">
-                    <div id="audio">
+                    <div id="help-audio">
                         <HelpAudio/>
                     </div>
                     <div id="doors">

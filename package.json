@@ -11,13 +11,14 @@
     "velocity-react": "^1.3.3"
   },
   "devDependencies": {
+    "node-sass": "^4.5.3",
     "node-sass-chokidar": "0.0.1",
     "npm-run-all": "^4.0.2",
     "react-scripts": "1.0.5"
   },
   "scripts": {
-    "build-css": "node-sass-chokidar src/ -o src/",
-    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+    "build-css": "node-sass src/ -o src/",
+    "watch-css": "npm run build-css && node-sass src/ -o src/ --watch --recursive",
     "start-js": "react-scripts start",
     "start-local": "npm-run-all -p watch-css start-js",
     "start": "node server",

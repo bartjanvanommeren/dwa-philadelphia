@@ -17,14 +17,14 @@
     "react-scripts": "1.0.5"
   },
   "scripts": {
-    "build-css": "node-sass src/ -o src/",
-    "watch-css": "npm run build-css && node-sass src/ -o src/ --watch --recursive",
+    "build-css": "node-sass-chokidar src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
     "start-js": "react-scripts start",
     "start-local": "npm-run-all -p watch-css start-js",
     "start": "node server",
     "build": "npm run build-css && react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "heroku-postbuild": "npm install && npm run watch-css && react-scripts build"
+    "heroku-postbuild": "npm rebuild node-sass-chokidar && npm run watch-css && react-scripts build"
   }
 }

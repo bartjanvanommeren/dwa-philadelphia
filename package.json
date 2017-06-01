@@ -20,10 +20,10 @@
     "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
     "start-js": "react-scripts start",
     "start-local": "npm-run-all -p watch-css start-js",
-    "start-server": "node server",
-    "start": "watch-css && start-server",
+    "start": "node server",
     "build": "npm run build-css && react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "npm run build"
   }
 }

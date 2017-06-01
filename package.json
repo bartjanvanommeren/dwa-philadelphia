@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "express": "^4.15.3",
-    "node-sass": "3.4.0",
+    "node-sass": "^4.5.3",
     "node-sass-chokidar": "0.0.1",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
@@ -25,6 +25,6 @@
     "build": "npm run build-css && react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "heroku-postbuild": "npm run watch-css && react-scripts build"
+    "heroku-postbuild": "npm install && npm run watch-css && react-scripts build"
   }
 }

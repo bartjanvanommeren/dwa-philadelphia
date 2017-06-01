@@ -1,0 +1,6 @@
+#back-button {
+  position: absolute;
+  bottom: 0;
+  margin: 10px; }
+  #back-button :hover {
+    cursor: pointer; }

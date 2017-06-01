@@ -2,9 +2,10 @@ const express = require('express');
 const path = require('path');
 
 const app = express();
+const port = process.env.PORT || 3000;
 
 app.use('/static', (req, res) => {
-    res.sendFile(path.join(__dirname, '..', 'build', 'static', req.path));
+    res.sendFile(path.join(__dirname, '..', 'build', 'static', decodeURIComponent(req.path)));
 });
 
 app.route('/')
@@ -12,6 +13,6 @@ app.route('/')
         res.sendFile(path.join(__dirname, '..', 'build', 'index.html'));
     });
 
-app.listen(3000, () => {
-    console.log('Server started and listening to ::', 3000);
+app.listen(port, () => {
+    console.log('Server started and listening to ::', port);
 });

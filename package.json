@@ -21,9 +21,9 @@
     "start-js": "react-scripts start",
     "start-local": "npm-run-all -p watch-css start-js",
     "start": "node server",
-    "build": "npm run build-css && react-scripts build",
+    "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "heroku-postbuild": "react-scripts build"
+    "heroku-postbuild": "npm run build"
   }
 }

@@ -83,7 +83,7 @@ yarn-error.log*
 /.idea
 
 # css
-src/**/*.css
+# src/**/*.css
 
 # JSHint config
 .jshintrc

@@ -4,11 +4,11 @@ const path = require('path');
 const app = express();
 const port = process.env.PORT || 3000;
 
-app.use('/static', (req, res) => {
+app.use('/bartjanvanommeren/multi-minor-philadelphia.git/static', (req, res) => {
     res.sendFile(path.join(__dirname, '..', 'build', 'static', decodeURIComponent(req.path)));
 });
 
-app.route('/')
+app.route('/*')
     .get((req, res) => {
         res.sendFile(path.join(__dirname, '..', 'build', 'index.html'));
     });

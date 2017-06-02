@@ -4,7 +4,7 @@ const path = require('path');
 const app = express();
 const port = process.env.PORT || 3000;
 
-app.use('/bartjanvanommeren/multi-minor-philadelphia.git/static', (req, res) => {
+app.use('/static', (req, res) => {
     res.sendFile(path.join(__dirname, '..', 'build', 'static', decodeURIComponent(req.path)));
 });
 

@@ -20,9 +20,10 @@ class Information extends Component {
     };
 
     componentDidMount() {
-        const sport = sportsInformation[this.props.params.sportName];
+        const sport = sportsInformation[this.props.params.sportName.replace(/ /g,'')];
+        
         var opts = {
-            playerVars: sportsInformation[this.props.params.sportName].playerVars
+            playerVars: sportsInformation[this.props.params.sportName.replace(/ /g,'')].playerVars
         };
         
         if (sport !== undefined)

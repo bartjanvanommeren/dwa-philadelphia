@@ -12,32 +12,39 @@ class Information extends Component {
 
         this.state = {
             sport: '',
-            sportInformation: []
+            sportInformation: [],
+            opts: {}
         }
+        
+        console.log(this.state.opts);
     };
 
     componentDidMount() {
         const sport = sportsInformation[this.props.params.sportName];
+        var opts = {
+            playerVars: sportsInformation[this.props.params.sportName].playerVars
+        };
+        
         if (sport !== undefined)
-            this.setState({sport: this.props.params.sportName,
-                sportInformation: sport});
+            this.setState({
+                sport: this.props.params.sportName,
+                sportInformation: sport,
+                opts: opts
+            });
+        
+        console.log(this.state.sportInformation);
     };
 
     goBack = () => {
         browserHistory.go(-1);
     };
 
-    render() {
-        const youtubeOpts = {
-            width: '920', //640
-            height: '560' //390
-        };
-        
+    render() {        
         return (
             <div>
                 <div className="videoContainer">
                     <h1>{this.state.sport}</h1>
-                    <Youtube videoId={this.state.sportInformation.videoId} opts={youtubeOpts}/>
+                    <Youtube videoId={this.state.sportInformation.videoId} opts={this.state.opts}/>
                     <p>{this.state.sportInformation.information}</p>
                 </div>
                 <div className="like" onClick={this.goBack}></div>

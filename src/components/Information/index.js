@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import {browserHistory} from 'react-router';
 
 import Youtube from 'react-youtube';
-import BackButton from '../BackButton';
 import './index.css';
 import sportsInformation from '../../sportsInformation';
 
@@ -15,8 +14,6 @@ class Information extends Component {
             sportInformation: [],
             opts: {}
         }
-        
-        console.log(this.state.opts);
     };
 
     componentDidMount() {

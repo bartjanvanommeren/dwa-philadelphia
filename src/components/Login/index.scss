@@ -1,0 +1,25 @@
+#login {
+  background: #deecf9;
+  height: 100vh;
+  > #help-audio {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  > h1 {
+    text-align: center;
+    padding: 15px;
+  }
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#start-button {
+  width: 200px;
+  height: 80px;
+  margin-top: 50px;
+}

@@ -19,8 +19,12 @@ class Door extends Component {
                 </div>
                 <div className="alignDoorBottom">
                     <div className="doorDiv" onClick={this.props.goToRoom}>
-                        <img src={doorImage} className="doorBackgroundImg"/>
-                        <img src={this.props.doorContent} className="doorForegroundImg"/>
+                        <img src={doorImage}
+                             className="doorBackgroundImg"
+                             alt={title + ' door'}/>
+                        <img src={this.props.doorContent}
+                             alt={title + ' door content'}
+                             className="doorForegroundImg"/>
                     </div>
                 </div>
             </div>

@@ -86,6 +86,7 @@ class Room extends Component {
             <img
                 key={i}
                 src={process.env.PUBLIC_URL + '/assets/' + option.doorOutside}
+                alt={option.question}
                 className={option.side}
                 onClick={(option.nextRoom !== undefined) ?
                     this.goToRoom.bind(this, option.nextRoom.id) :

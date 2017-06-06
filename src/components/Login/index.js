@@ -51,7 +51,8 @@ class Login extends Component {
                     {(this.state.canStart) ?
                         <img id="start-button"
                              src={startImage}
-                        onClick={this.start.bind(this)}/> :
+                             alt="Start knop"
+                             onClick={this.start.bind(this)}/> :
                         ''}
                 </div>
             </div>

@@ -3,7 +3,7 @@ import {browserHistory} from 'react-router';
 
 import Audio from '../Audio';
 import CaptureImage from '../CaptureImage';
-import audioPath from './can-you-keep-a-secret.wav';
+import audioPath from './Begin van sportestic.mp3';
 import startImage from './start.svg';
 import './index.css';
 

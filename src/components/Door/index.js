@@ -15,12 +15,14 @@ class Door extends Component {
                 <div className="door-title">
                     <h1>{title}</h1>
                 </div>
-                <Audio audioPath={audioPath}/>
-                <div className="alignDoorBottom">
-                <div className="doorDiv" onClick={this.props.goToRoom}>
-                    <img src={doorImage} className="doorBackgroundImg"/>
-                    <img src={this.props.doorContent} className="doorForegroundImg"/>
+                <div className="door-audio">
+                    <Audio audioPath={audioPath}/>
                 </div>
+                <div className="alignDoorBottom">
+                    <div className="doorDiv" onClick={this.props.goToRoom}>
+                        <img src={doorImage} className="doorBackgroundImg"/>
+                        <img src={this.props.doorContent} className="doorForegroundImg"/>
+                    </div>
                 </div>
             </div>
         );

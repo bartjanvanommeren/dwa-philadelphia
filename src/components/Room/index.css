@@ -33,3 +33,6 @@
   margin-top: -15%;
   position: absolute;
   z-index: 1; }
+
+#assets :hover {
+  cursor: pointer; }

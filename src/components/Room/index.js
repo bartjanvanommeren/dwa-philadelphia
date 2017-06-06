@@ -72,15 +72,27 @@ class Room extends Component {
     };
 
     render() {
+        console.log(this.state.currentRoom);
         const doors = this.state.currentRoom.options.map((option, i) => (
             <Door
                 key={i}
                 title={option.title}
-                imagePath={option.imagePath}
+                doorContent={process.env.PUBLIC_URL + '/assets/' + option.doorContent}
                 audioPath={option.audioPath}
                 goToRoom={(option.nextRoom !== undefined) ?
                     this.goToRoom.bind(this, option.nextRoom.id) :
                     this.goToSports.bind(this, this.state.currentRoom.id, i)}/>
+        ));
+
+        const doorAssets = this.state.currentRoom.options.map((option, i) => (
+            <img
+                key={i}
+                src={process.env.PUBLIC_URL + '/assets/' + option.doorOutside}
+                className={option.side}
+                onClick={(option.nextRoom !== undefined) ?
+                    this.goToRoom.bind(this, option.nextRoom.id) :
+                    this.goToSports.bind(this, this.state.currentRoom.id, i)}
+            />
         ));
 
         const backButton = (this.state.currentRoom.id !== 0) ?
@@ -96,6 +108,9 @@ class Room extends Component {
                     <div id="doors">
                         {doors}
                     </div>
+                </div>
+                <div id="assets">
+                    {doorAssets}
                 </div>
                 <div id="floor">
                     {backButton}

@@ -5,10 +5,39 @@
   .door .door-title {
     text-align: center;
     padding: 20px; }
+  .door .alignDoorBottom {
+    position: absolute;
+    width: 100%;
+    bottom: 0; }
+    .door .alignDoorBottom .doorDiv {
+      position: relative;
+      bottom: 0;
+      cursor: pointer; }
+      .door .alignDoorBottom .doorDiv .doorBackgroundImg {
+        position: absolute;
+        z-index: 1;
+        bottom: 0;
+        margin-bottom: -16%; }
+      .door .alignDoorBottom .doorDiv .doorForegroundImg {
+        position: absolute;
+        width: 63%;
+        bottom: 0;
+        margin-left: 18%; }
   .door > .doorImg {
+    height: 50vh;
     width: 100%;
     position: absolute;
     bottom: 0;
-    cursor: pointer; }
+    cursor: pointer;
+    margin-bottom: -15%;
+    z-index: 4; }
     .door > .doorImg > img {
-      margin-bottom: -16.5%; }
+      margin-bottom: 15%;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      z-index: 0; }
+
+.door-audio {
+  display: flex;
+  justify-content: center; }

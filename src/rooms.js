@@ -18,17 +18,13 @@ export default {
                 doorOutside: 'pingpongtafel2.svg',
                 side: 'left',
                 audioPath: 'Dit is met bal sporten, wil je dit.mp3',
-                sports: [
-                    {
-                        name: 'Tennis'
-                    },
-                    {
-                        name: 'Badminton'
-                    },
-                    {
-                        name: 'Tafeltennis'
-                    }
-                ]
+                sports: [{
+                    name: 'Tennis'
+                }, {
+                    name: 'Badminton'
+                }, {
+                    name: 'Tafeltennis'
+                }]
             }, {
                 title: 'Zonder een bal',
                 doorContent: 'blauw.svg',
@@ -75,17 +71,13 @@ export default {
                                 doorOutside: '',
                                 side: 'right',
                                 audioPath: 'Dit is geen zwem sporten, wil je dit.mp3',
-                                sports: [
-                                    {
-                                        name: 'Fitness'
-                                    },
-                                    {
-                                        name: 'Yoga'
-                                    },
-                                    {
-                                        name: 'Dansen'
-                                    }
-                                ]
+                                sports: [{
+                                    name: 'Fitness'
+                                }, {
+                                    name: 'Yoga'
+                                }, {
+                                    name: 'Dansen'
+                                }]
                             }]
                         }
                     }, {
@@ -94,17 +86,13 @@ export default {
                         doorOutside: 'alleenzonderbalbuiten.svg',
                         side: 'right',
                         audioPath: 'Dit is buiten sporten, wil je dit.mp3',
-                        sports: [
-                            {
-                                name: 'Hardlopen'
-                            },
-                            {
-                                name: 'Fietsen'
-                            },
-                            {
-                                name: 'Peerdrijden'
-                            }
-                        ]
+                        sports: [{
+                            name: 'Hardlopen'
+                        }, {
+                            name: 'Fietsen'
+                        }, {
+                            name: 'Peerdrijden'
+                        }]
                     }]
                 }
             }]
@@ -125,31 +113,24 @@ export default {
                 doorOutside: 'volleybalster met bal.svg',
                 side: 'left',
                 audioPath: 'Dit is binnen sporten, wil je dit.mp3',
-                sports: [
-                    {
-                        name: 'Basketbal'
-                    },
-                    {
-                        name: 'Korfbal'
-                    },
-                    {
-                        name: 'Volleybal'
-                    }
-                ]
+                sports: [{
+                    name: 'Basketbal'
+                }, {
+                    name: 'Korfbal'
+                }, {
+                    name: 'Volleybal'
+                }]
             }, {
                 title: 'Buiten',
                 doorContent: 'blauw.svg',
                 doorOutside: 'voetballer met goal en bal.svg',
                 side: 'right',
                 audioPath: 'Dit is buiten sporten, wil je dit.mp3',
-                sports: [
-                    {
-                        name: 'Voetbal'
-                    },
-                    {
-                        name: 'Korfbal'
-                    }
-                ]
+                sports: [{
+                    name: 'Voetbal'
+                }, {
+                    name: 'Korfbal'
+                }]
             }]
         }
     }]

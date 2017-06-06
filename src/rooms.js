@@ -32,7 +32,7 @@ export default {
                     question: 'Wil je binnen of buiten sporten?',
                     options: [{
                         title: 'Binnen',
-                        doorContent: 'zwembad klein.svg',
+                        doorContent: 'blauw.svg',
                         doorOutside: 'alleensporten.svg',
                         side: 'left',
                         audioPath: 'pathToAudio',
@@ -52,7 +52,7 @@ export default {
                                 ]
                             }, {
                                 title: 'Zonder water',
-                                doorContent: 'zwembad klein.svg',
+                                doorContent: 'sportzaal.svg',
                                 doorOutside: 'alleensporten.svg',
                                 side: 'right',
                                 audioPath: 'pathToAudio',
@@ -65,7 +65,7 @@ export default {
                         }
                     }, {
                         title: 'Buiten',
-                        doorContent: 'zwembad klein.svg',
+                        doorContent: 'weiland2.svg',
                         doorOutside: 'alleensporten.svg',
                         side: 'right',
                         audioPath: 'pathToAudio',
@@ -89,7 +89,7 @@ export default {
             question: 'Wil je binnen of buiten sporten?',
             options: [{
                 title: 'Binnen',
-                doorContent: 'zwembad klein.svg',
+                doorContent: 'blauw.svg',
                 doorOutside: 'alleensporten.svg',
                 side: 'left',
                 audioPath: 'pathToAudio',
@@ -100,7 +100,7 @@ export default {
                 ]
             }, {
                 title: 'Buiten',
-                doorContent: 'zwembad klein.svg',
+                doorContent: 'blauw.svg',
                 doorOutside: 'alleensporten.svg',
                 side: 'right',
                 audioPath: 'pathToAudio',

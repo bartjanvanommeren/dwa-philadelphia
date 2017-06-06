@@ -4,7 +4,6 @@ import {browserHistory} from 'react-router';
 import Door from '../Door';
 import BackButton from '../BackButton';
 import Audio from '../Audio';
-import audioPath from './am-i-totally-screwed-or.wav';
 import rooms from '../../rooms';
 import './index.css';
 
@@ -72,7 +71,6 @@ class Room extends Component {
     };
 
     render() {
-        console.log(this.state.currentRoom);
         const doors = this.state.currentRoom.options.map((option, i) => (
             <Door
                 key={i}
@@ -103,7 +101,7 @@ class Room extends Component {
             <div>
                 <div id="wall">
                     <div id="help-audio">
-                        <Audio audioPath={audioPath}/>
+                        <Audio audioPath={process.env.PUBLIC_URL + '/audio/' + this.state.currentRoom.audioPath}/>
                     </div>
                     <div id="doors">
                         {doors}

@@ -3,14 +3,18 @@ export default {
     question: 'Wil je alleen of samen sporten?',
     options: [{
         title: 'Alleen',
-        imagePath: 'pathToImage',
+        doorContent: 'blauw.svg',
+        doorOutside: 'alleensporten.svg',
+        side: 'left',
         audioPath: 'pathToAudio',
         nextRoom: {
             id: 1,
             question: 'Wil je met een bal of zonder bal sporten?',
             options: [{
                 title: 'Met een bal',
-                imagePath: 'pathToImage',
+                doorContent: 'blauw.svg',
+                doorOutside: 'alleensporten.svg',
+                side: 'left',
                 audioPath: 'pathToAudio',
                 sports: [
                     {name: 'Tennis'},
@@ -19,21 +23,27 @@ export default {
                 ]
             }, {
                 title: 'Zonder een bal',
-                imagePath: 'pathToImage',
+                doorContent: 'blauw.svg',
+                doorOutside: 'alleensporten.svg',
+                side: 'right',
                 audioPath: 'pathToAudio',
                 nextRoom: {
                     id: 2,
                     question: 'Wil je binnen of buiten sporten?',
                     options: [{
                         title: 'Binnen',
-                        imagePath: 'pathToImage',
+                        doorContent: 'zwembad klein.svg',
+                        doorOutside: 'alleensporten.svg',
+                        side: 'left',
                         audioPath: 'pathToAudio',
                         nextRoom: {
                             id: 3,
                             question: 'Wil je met of zonder water sporten?',
                             options: [{
                                 title: 'Met water',
-                                imagePath: 'pathToImage',
+                                doorContent: 'zwembad klein.svg',
+                                doorOutside: 'alleensporten.svg',
+                                side: 'left',
                                 audioPath: 'pathToAudio',
                                 sports: [
                                     {name: 'Baantjes zwemmen'},
@@ -42,7 +52,9 @@ export default {
                                 ]
                             }, {
                                 title: 'Zonder water',
-                                imagePath: 'pathToImage',
+                                doorContent: 'zwembad klein.svg',
+                                doorOutside: 'alleensporten.svg',
+                                side: 'right',
                                 audioPath: 'pathToAudio',
                                 sports: [
                                     {name: 'Fitness'},
@@ -53,7 +65,9 @@ export default {
                         }
                     }, {
                         title: 'Buiten',
-                        imagePath: 'pathToImage',
+                        doorContent: 'zwembad klein.svg',
+                        doorOutside: 'alleensporten.svg',
+                        side: 'right',
                         audioPath: 'pathToAudio',
                         sports: [
                             {name: 'Hardlopen'},
@@ -66,14 +80,18 @@ export default {
         }
     }, {
         title: 'Samen',
-        imagePath: 'pathToImage',
+        doorContent: 'blauw.svg',
+        doorOutside: 'teamsporters.svg',
+        side: 'right',
         audioPath: 'pathToAudio',
         nextRoom: {
             id: 4,
             question: 'Wil je binnen of buiten sporten?',
             options: [{
                 title: 'Binnen',
-                imagePath: 'pathToImage',
+                doorContent: 'zwembad klein.svg',
+                doorOutside: 'alleensporten.svg',
+                side: 'left',
                 audioPath: 'pathToAudio',
                 sports: [
                     {name: 'Basketbal'},
@@ -82,7 +100,9 @@ export default {
                 ]
             }, {
                 title: 'Buiten',
-                imagePath: 'pathToImage',
+                doorContent: 'zwembad klein.svg',
+                doorOutside: 'alleensporten.svg',
+                side: 'right',
                 audioPath: 'pathToAudio',
                 sports: [
                     {name: 'Voetbal'},

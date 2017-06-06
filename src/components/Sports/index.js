@@ -13,18 +13,35 @@ class Sports extends Component {
 
         this.state = {
             rooms: rooms,
-            sports: []
+            sports: [],
+            background: "test"
         };
     }
 
     componentDidMount() {
         const roomId = parseInt(this.props.params.roomId, 10);
         const doorId = parseInt(this.props.params.doorId, 10);
+        var background = "";
         
-        
+        switch (this.props.params.roomId) {
+            case "1":
+                background = "sportzaal";
+                break;
+            case "2":
+                background = "weiland";
+                break;
+            case "3":
+                background = "zwembad";
+                break;
+            case "4":
+                background = "sportzaal";
+                break;
+        }
         
         const sports = this.findSports(this.state.rooms, roomId, doorId);
-        this.setState({sports: sports});
+        this.setState({sports: sports, background: background});
+        
+        
     }
 
     findSports = (room, roomId, doorId) => {
@@ -59,16 +76,16 @@ class Sports extends Component {
             <Sport key={i}
                    name={sport.name}/>
         ));
+        
+        const background = this.state.background;
 
         return (
-            <div>
-                <div className="lastRoomContainer" id={this.props.params.roomId}>
+                <div className={background}>
                     <div id="options">
                         {sports}
                     </div>
                     <BackButton goBack={this.goBack.bind(this)}/>
                 </div>
-            </div>
         );
     }
 

@@ -43,9 +43,7 @@ class Sports extends Component {
         }
         
         const sports = this.findSports(this.state.rooms, roomId, doorId);
-        this.setState({sports: sports, background: background});
-        
-        
+        this.setState({sports: sports, background: background});     
     }
 
     findSports = (room, roomId, doorId) => {
@@ -78,7 +76,8 @@ class Sports extends Component {
     render() {
         const sports = this.state.sports.map((sport, i) => (
             <Sport key={i}
-                   name={sport.name}/>
+                   name={sport.name}
+                    audioPath={sport.audioPath}/>
         ));
         
         const background = this.state.background;

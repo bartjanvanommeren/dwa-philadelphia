@@ -91,9 +91,9 @@ export default {
         information: 'Lorem ipsum dolar sit amet'
     },
     "Korfbal": {
-        videoId: 'f0vx6o8F29I',
+        videoId: 'BfmG-kf95Wo',
         playerVars: {
-            start: 90
+            start: 0
         },
         information: 'Lorem ipsum dolar sit amet'
     },

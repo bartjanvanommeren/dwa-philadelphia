@@ -50,7 +50,10 @@ export default {
                                 side: 'left',
                                 audioPath: 'Dit is zwem sporten, wil je dit.mp3',
                                 sports: [
-                                    {name: 'Baantjes zwemmen'},
+                                    {
+                                        name: 'Baantjes zwemmen',
+                                        audioPath: 'Dit is baantjeszwemmen, wil je dit doen.mp3'
+                                    },
                                     {name: 'Vrij zwemmen'},
                                     {name: 'Aqua gym'}
                                 ]

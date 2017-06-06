@@ -31,7 +31,11 @@ class Sports extends Component {
                 background = "weiland";
                 break;
             case "3":
-                background = "zwembad";
+                if (doorId === 0) {
+                    background = "zwembad";
+                } else {
+                    background = "sportzaal";
+                }
                 break;
             case "4":
                 background = "sportzaal";

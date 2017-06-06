@@ -35,7 +35,7 @@ class CaptureImage extends Component {
     }
 
     componentWillUnmount() {
-        this.state.stream.stop();
+        this.state.stream.getTracks()[0].stop();
     }
 
     videoCanPlay = () => {

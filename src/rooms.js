@@ -35,7 +35,7 @@ export default {
                     audioPath: 'uitleg keuze tussen binnen en buiten.mp3',
                     options: [{
                         title: 'Binnen',
-                        doorContent: 'zwembad klein.svg',
+                        doorContent: 'blauw.svg',
                         doorOutside: 'alleensporten.svg',
                         side: 'left',
                         audioPath: 'Dit is binnen sporten, wil je dit.mp3',
@@ -56,7 +56,7 @@ export default {
                                 ]
                             }, {
                                 title: 'Zonder water',
-                                doorContent: 'zwembad klein.svg',
+                                doorContent: 'sportzaal.svg',
                                 doorOutside: 'alleensporten.svg',
                                 side: 'right',
                                 audioPath: 'Dit is geen zwem sporten, wil je dit.mp3',
@@ -69,7 +69,7 @@ export default {
                         }
                     }, {
                         title: 'Buiten',
-                        doorContent: 'zwembad klein.svg',
+                        doorContent: 'weiland2.svg',
                         doorOutside: 'alleensporten.svg',
                         side: 'right',
                         audioPath: 'Dit is buiten sporten, wil je dit.mp3',
@@ -94,7 +94,7 @@ export default {
             audioPath: 'uitleg keuze tussen binnen en buiten.mp3',
             options: [{
                 title: 'Binnen',
-                doorContent: 'zwembad klein.svg',
+                doorContent: 'blauw.svg',
                 doorOutside: 'alleensporten.svg',
                 side: 'left',
                 audioPath: 'Dit is binnen sporten, wil je dit.mp3',
@@ -105,7 +105,7 @@ export default {
                 ]
             }, {
                 title: 'Buiten',
-                doorContent: 'zwembad klein.svg',
+                doorContent: 'blauw.svg',
                 doorOutside: 'alleensporten.svg',
                 side: 'right',
                 audioPath: 'Dit is buiten sporten, wil je dit.mp3',

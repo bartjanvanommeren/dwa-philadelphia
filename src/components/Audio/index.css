@@ -5,3 +5,5 @@
   .help-audio > img {
     width: 80px;
     height: 40px; }
+  .help-audio :hover {
+    cursor: pointer; }

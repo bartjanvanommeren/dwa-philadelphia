@@ -1,3 +1,7 @@
+#information-container {
+  background-color: #deecf9;
+  height: 100vh; }
+
 .videoContainer {
   position: fixed;
   top: 50%;
@@ -17,7 +21,6 @@ iframe {
 .like {
   width: 15vh;
   height: 15vh;
-  background-color: green;
   position: fixed;
   top: 100px;
   right: 100px; }
@@ -25,7 +28,6 @@ iframe {
 .dislike {
   width: 15vh;
   height: 15vh;
-  background-color: darkred;
   position: fixed;
   bottom: 100px;
   right: 100px; }

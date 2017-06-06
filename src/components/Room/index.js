@@ -83,7 +83,8 @@ class Room extends Component {
         ));
 
         const doorAssets = this.state.currentRoom.options.map((option, i) => (
-            <img
+        (option.doorOutside) ?
+            (<img
                 key={i}
                 src={process.env.PUBLIC_URL + '/assets/' + option.doorOutside}
                 alt={option.question}
@@ -91,7 +92,8 @@ class Room extends Component {
                 onClick={(option.nextRoom !== undefined) ?
                     this.goToRoom.bind(this, option.nextRoom.id) :
                     this.goToSports.bind(this, this.state.currentRoom.id, i)}
-            />
+            />)
+            : ''
         ));
 
         const backButton = (this.state.currentRoom.id !== 0) ?

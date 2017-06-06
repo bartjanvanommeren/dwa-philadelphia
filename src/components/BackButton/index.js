@@ -8,8 +8,7 @@ class BackButton extends Component {
         return (
             <div id="back-button" onClick={this.props.goBack}>
                 <img src={backImage}
-                     alt="back button"
-                     draggable="false"/>
+                     alt="back button"/>
             </div>
         );
     }

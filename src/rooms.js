@@ -4,7 +4,7 @@ export default {
     options: [{
         title: 'Alleen',
         doorContent: 'blauw.svg',
-        doorOutside: 'alleensporten.svg',
+        doorOutside: 'alleensportengif2.gif',
         side: 'left',
         audioPath: 'pathToAudio',
         nextRoom: {
@@ -13,7 +13,7 @@ export default {
             options: [{
                 title: 'Met een bal',
                 doorContent: 'blauw.svg',
-                doorOutside: 'alleensporten.svg',
+                doorOutside: 'pingpongtafel2.svg',
                 side: 'left',
                 audioPath: 'pathToAudio',
                 sports: [
@@ -24,7 +24,7 @@ export default {
             }, {
                 title: 'Zonder een bal',
                 doorContent: 'blauw.svg',
-                doorOutside: 'alleensporten.svg',
+                doorOutside: 'Alleengeenbal.svg',
                 side: 'right',
                 audioPath: 'pathToAudio',
                 nextRoom: {
@@ -33,7 +33,7 @@ export default {
                     options: [{
                         title: 'Binnen',
                         doorContent: 'blauw.svg',
-                        doorOutside: 'alleensporten.svg',
+                        doorOutside: 'alleensportengif2.gif',
                         side: 'left',
                         audioPath: 'pathToAudio',
                         nextRoom: {
@@ -42,7 +42,7 @@ export default {
                             options: [{
                                 title: 'Met water',
                                 doorContent: 'zwembad klein.svg',
-                                doorOutside: 'alleensporten.svg',
+                                doorOutside: '',
                                 side: 'left',
                                 audioPath: 'pathToAudio',
                                 sports: [
@@ -53,7 +53,7 @@ export default {
                             }, {
                                 title: 'Zonder water',
                                 doorContent: 'sportzaal.svg',
-                                doorOutside: 'alleensporten.svg',
+                                doorOutside: '',
                                 side: 'right',
                                 audioPath: 'pathToAudio',
                                 sports: [
@@ -66,7 +66,7 @@ export default {
                     }, {
                         title: 'Buiten',
                         doorContent: 'weiland2.svg',
-                        doorOutside: 'alleensporten.svg',
+                        doorOutside: 'alleenzonderbalbuiten.svg',
                         side: 'right',
                         audioPath: 'pathToAudio',
                         sports: [
@@ -90,7 +90,7 @@ export default {
             options: [{
                 title: 'Binnen',
                 doorContent: 'blauw.svg',
-                doorOutside: 'alleensporten.svg',
+                doorOutside: 'volleybalster met bal.svg',
                 side: 'left',
                 audioPath: 'pathToAudio',
                 sports: [
@@ -101,7 +101,7 @@ export default {
             }, {
                 title: 'Buiten',
                 doorContent: 'blauw.svg',
-                doorOutside: 'alleensporten.svg',
+                doorOutside: 'voetballer met goal en bal.svg',
                 side: 'right',
                 audioPath: 'pathToAudio',
                 sports: [

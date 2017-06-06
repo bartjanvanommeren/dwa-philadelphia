@@ -1,0 +1,10 @@
+.sportImage {
+  width: 20vh; }
+
+.sportDescriptionContainer {
+  text-align: center;
+  height: 30vh;
+  width: 50vh;
+  align-self: bottom; }
+  .sportDescriptionContainer :hover {
+    cursor: pointer; }

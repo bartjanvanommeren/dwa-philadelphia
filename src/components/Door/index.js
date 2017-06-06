@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 
 import Audio from '../Audio';
 import doorImage from './deur2.svg';
-import audioPath from './can-you-keep-a-secret.wav';
 import './index.css';
 
 class Door extends Component {
@@ -16,12 +15,16 @@ class Door extends Component {
                     <h1>{title}</h1>
                 </div>
                 <div className="door-audio">
-                    <Audio audioPath={audioPath}/>
+                    <Audio audioPath={process.env.PUBLIC_URL + '/audio/' + this.props.audioPath}/>
                 </div>
                 <div className="alignDoorBottom">
                     <div className="doorDiv" onClick={this.props.goToRoom}>
-                        <img src={doorImage} className="doorBackgroundImg"/>
-                        <img src={this.props.doorContent} className="doorForegroundImg"/>
+                        <img src={doorImage}
+                             className="doorBackgroundImg"
+                             alt={title + ' door'}/>
+                        <img src={this.props.doorContent}
+                             alt={title + ' door content'}
+                             className="doorForegroundImg"/>
                     </div>
                 </div>
             </div>

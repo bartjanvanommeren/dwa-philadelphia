@@ -20,7 +20,7 @@ class Sport extends Component {
                     <img 
                         alt={this.props.name} 
                         className="sportImage" 
-                        src={process.env.PUBLIC_URL + '/assets/' + this.props.name.replace(/ /g,'') + ".svg"} />
+                        src={process.env.PUBLIC_URL + '/assets/' + this.props.name.replace(/ /g,'').toLowerCase() + ".svg"} />
                 </div>
             </div>
         )

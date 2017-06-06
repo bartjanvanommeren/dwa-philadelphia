@@ -3,7 +3,7 @@ import {browserHistory} from 'react-router';
 
 import Audio from '../Audio';
 import CaptureImage from '../CaptureImage';
-import audioPath from './can-you-keep-a-secret.wav';
+import audioPath from './Begin van sportestic.mp3';
 import startImage from './start.svg';
 import './index.css';
 
@@ -49,9 +49,11 @@ class Login extends Component {
                     <CaptureImage setImage={this.setImage.bind(this)}
                                   removeImage={this.removeImage.bind(this)}/>
                     {(this.state.canStart) ?
-                        <img id="start-button"
-                             src={startImage}
-                        onClick={this.start.bind(this)}/> :
+                        <div id="start-button">
+                            <img src={startImage}
+                                 alt="Start knop"
+                                 onClick={this.start.bind(this)}/>
+                        </div> :
                         ''}
                 </div>
             </div>

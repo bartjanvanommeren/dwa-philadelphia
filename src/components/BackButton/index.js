@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import backImage from './Pijl.png';
+import backImage from './pijl terug.svg';
 import './index.css';
 
 class BackButton extends Component {
@@ -8,7 +8,8 @@ class BackButton extends Component {
         return (
             <div id="back-button" onClick={this.props.goBack}>
                 <img src={backImage}
-                     alt="back button"/>
+                     alt="back button"
+                     draggable="false"/>
             </div>
         );
     }

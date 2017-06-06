@@ -13,7 +13,8 @@ class CaptureImage extends Component {
             width: 320,
             height: 240,
             streaming: false,
-            imageCaptured: false
+            imageCaptured: false,
+            stream: false
         };
     }
 
@@ -22,6 +23,7 @@ class CaptureImage extends Component {
 
         navigator.mediaDevices.getUserMedia({video: true, audio: false})
             .then((stream) => {
+                this.setState({stream: stream});
                 video.srcObject = stream;
                 video.play();
             })
@@ -30,6 +32,10 @@ class CaptureImage extends Component {
             });
 
         this.clearImage();
+    }
+
+    componentWillUnmount() {
+        this.state.stream.stop();
     }
 
     videoCanPlay = () => {

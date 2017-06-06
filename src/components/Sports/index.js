@@ -4,6 +4,7 @@ import {browserHistory} from 'react-router';
 import rooms from '../../rooms';
 import Sport from "./Sport";
 import BackButton from "../BackButton";
+import './index.css';
 
 class Sports extends Component {
 
@@ -19,7 +20,9 @@ class Sports extends Component {
     componentDidMount() {
         const roomId = parseInt(this.props.params.roomId, 10);
         const doorId = parseInt(this.props.params.doorId, 10);
-
+        
+        
+        
         const sports = this.findSports(this.state.rooms, roomId, doorId);
         this.setState({sports: sports});
     }
@@ -59,12 +62,10 @@ class Sports extends Component {
 
         return (
             <div>
-                <div id="wall">
-                    <div id="doors">
+                <div className="lastRoomContainer" id={this.props.params.roomId}>
+                    <div id="options">
                         {sports}
                     </div>
-                </div>
-                <div id="floor">
                     <BackButton goBack={this.goBack.bind(this)}/>
                 </div>
             </div>

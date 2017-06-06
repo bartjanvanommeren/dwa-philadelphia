@@ -85,6 +85,7 @@ class Sports extends Component {
 
         return (
                 <div className={background}>
+                    <div className="filler"></div>
                     <div id="options">
                         {sports}
                     </div>
@@ -92,7 +93,6 @@ class Sports extends Component {
                 </div>
         );
     }
-
 }
 
 export default Sports;

@@ -1,67 +1,114 @@
 export default {
     "Tennis": {
-        videoId: 'xuCn8ux2gbs',
+        videoId: 'oyxhHkOel2I',
+        playerVars: {
+            start: 5
+        },
         information: 'Lorem ipsum dolar sit amet'
     },
     "Badminton": {
-        videoId: 'xuCn8ux2gbs',
+        videoId: '8G-3CEuXQjg',
+        playerVars: {
+            start: 0
+        },
         information: 'Lorem ipsum dolar sit amet'
     },
     "Tafeltennis": {
-        videoId: 'xuCn8ux2gbs',
+        videoId: 'PDsgv7h4BZ0',
+        playerVars: {
+            start: 0
+        },
         information: 'Lorem ipsum dolar sit amet'
     },
     "Baantjeszwemmen": {
-        videoId: 'xuCn8ux2gbs',
+        videoId: 'LSFcY6lJMrs',
+        playerVars: {
+            start: 0
+        },
         information: 'Lorem ipsum dolar sit amet'
     },
     "Vrijzwemmen": {
-        videoId: 'xuCn8ux2gbs',
+        videoId: 'Wl9DIa6y4nw',
+        playerVars: {
+            start: 0
+        },
         information: 'Lorem ipsum dolar sit amet'
     },
     "Aquagym": {
-        videoId: 'xuCn8ux2gbs',
+        videoId: 'wyYpnmeWbUc',
+        playerVars: {
+            start: 19
+        },
         information: 'Lorem ipsum dolar sit amet'
     },
     "Fitness": {
-        videoId: 'xuCn8ux2gbs',
+        videoId: '0IXTOMSEKp4',
+        playerVars: {
+            start: 0
+        },
         information: 'Lorem ipsum dolar sit amet'
     },
     "Yoga": {
-        videoId: 'xuCn8ux2gbs',
+        videoId: 'qBEyBvX2Ql4',
+        playerVars: {
+            start: 60
+        },
         information: 'Lorem ipsum dolar sit amet'
     },
     "Dansen": {
-        videoId: 'xuCn8ux2gbs',
+        videoId: 'lDn-u8Cy6_o',
+        playerVars: {
+            start: 0
+        },
         information: 'Lorem ipsum dolar sit amet'
     },
     "Hardlopen": {
-        videoId: 'xuCn8ux2gbs',
+        videoId: '_c__R2A7zcU',
+        playerVars: {
+            start: 0
+        },
         information: 'Lorem ipsum dolar sit amet'
     },
     "Fietsen": {
-        videoId: 'xuCn8ux2gbs',
+        videoId: 'Ntkph3l2D1c',
+        playerVars: {
+            start: 60
+        },
         information: 'Lorem ipsum dolar sit amet'
     },
-    "Paardrijden": {
-        videoId: 'xuCn8ux2gbs',
+    "Peerdrijden": {
+        videoId: 'lksRLRfjA2E',
+        playerVars: {
+            start: 0
+        },
         information: 'Lorem ipsum dolar sit amet'
     },
     "Basketbal": {
-        videoId: 'xuCn8ux2gbs',
+        videoId: 'i5XF-4Uar0c',
+        playerVars: {
+            start: 0
+        },
         information: 'Lorem ipsum dolar sit amet'
     },
     "Korfbal": {
-        videoId: 'xuCn8ux2gbs',
+        videoId: 'f0vx6o8F29I',
+        playerVars: {
+            start: 90
+        },
         information: 'Lorem ipsum dolar sit amet'
     },
     "Volleybal": {
-        videoId: 'xuCn8ux2gbs',
+        videoId: 'bpz0c81BlrM',
+        playerVars: {
+            start: 20
+        },
         information: 'Lorem ipsum dolar sit amet'
     },
     "Voetbal": {
-        videoId: 'xuCn8ux2gbs',
+        videoId: 'sBdBX58RYEc',
+        playerVars: {
+            start: 46
+        },
         information: 'Lorem ipsum dolar sit amet'
     }
-}
-
+};

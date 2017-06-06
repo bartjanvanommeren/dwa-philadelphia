@@ -1,0 +1,14 @@
+.door {
+  position: relative;
+  width: 30%;
+  padding-top: 10px; }
+  .door .door-title {
+    text-align: center;
+    padding: 20px; }
+  .door > .doorImg {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    cursor: pointer; }
+    .door > .doorImg > img {
+      margin-bottom: -16.5%; }

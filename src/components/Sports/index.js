@@ -22,10 +22,10 @@ class Sports extends Component {
         const roomId = parseInt(this.props.params.roomId, 10);
         const doorId = parseInt(this.props.params.doorId, 10);
         var background = "";
-        
+
         switch (this.props.params.roomId) {
             case "1":
-                background = "sportzaal";
+                background = "gymzaal";
                 break;
             case "2":
                 background = "weiland";
@@ -38,12 +38,16 @@ class Sports extends Component {
                 }
                 break;
             case "4":
-                background = "sportzaal";
+                if (doorId === 0) {
+                    background = "gymzaal";
+                } else {
+                    background = "veldsport";
+                }
                 break;
         }
-        
+
         const sports = this.findSports(this.state.rooms, roomId, doorId);
-        this.setState({sports: sports, background: background});     
+        this.setState({sports: sports, background: background});
     }
 
     findSports = (room, roomId, doorId) => {
@@ -77,19 +81,20 @@ class Sports extends Component {
         const sports = this.state.sports.map((sport, i) => (
             <Sport key={i}
                    name={sport.name}
-                    audioPath={sport.audioPath}/>
+                   audioPath={sport.audioPath}
+                   imagePath={sport.imagePath}/>
         ));
-        
+
         const background = this.state.background;
 
         return (
-                <div className={background}>
-                    <div className="filler"></div>
-                    <div id="options">
-                        {sports}
-                    </div>
-                    <BackButton goBack={this.goBack.bind(this)}/>
+            <div className={background}>
+                <div className="filler"></div>
+                <div id="options">
+                    {sports}
                 </div>
+                <BackButton goBack={this.goBack.bind(this)}/>
+            </div>
         );
     }
 }

@@ -10,9 +10,6 @@ class Sport extends Component {
     };
 
     render() {
-        console.log(process.env.PUBLIC_URL + '/assets/' + this.props.name.replace(/ /g,'') + ".svg");
-        
-        console.log(this.props);
         return (
             <div className="audioContainer">
                 <Audio className="audio" audioPath={process.env.PUBLIC_URL + "/audio/" + this.props.audioPath}/>
@@ -20,7 +17,7 @@ class Sport extends Component {
                     <img 
                         alt={this.props.name} 
                         className="sportImage" 
-                        src={process.env.PUBLIC_URL + '/assets/' + this.props.name.replace(/ /g,'').toLowerCase() + ".svg"} />
+                        src={process.env.PUBLIC_URL + '/assets/' + this.props.imagePath} />
                 </div>
             </div>
         )

@@ -7,12 +7,11 @@ import './index.css';
 class Door extends Component {
 
     render() {
-        const title = this.props.title;
 
         return (
             <div className="door">
                 <div className="door-title">
-                    <h1>{title}</h1>
+                    <h1>{this.props.title}</h1>
                 </div>
                 <div className="door-audio">
                     <Audio audioPath={process.env.PUBLIC_URL + '/audio/' + this.props.audioPath}/>
@@ -21,9 +20,9 @@ class Door extends Component {
                     <div className="doorDiv" onClick={this.props.goToRoom}>
                         <img src={doorImage}
                              className="doorBackgroundImg"
-                             alt={title + ' door'}/>
+                             alt='door image'/>
                         <img src={this.props.doorContent}
-                             alt={title + ' door content'}
+                             alt={this.props.doorContent}
                              className="doorForegroundImg"/>
                     </div>
                 </div>

@@ -14,16 +14,18 @@ export default {
             audioPath: 'uitleg keuze tussen bal en zonder bal.mp3',
             options: [{
                 title: 'Met een bal',
-                doorContent: 'blauw.svg',
+                doorContent: 'gymzaal.svg',
                 doorOutside: 'tafeltennis.svg',
                 side: 'left',
                 audioPath: 'Dit is met bal sporten, wil je dit.mp3',
                 sports: [{
                     name: 'Tennis'
                 }, {
-                    name: 'Badminton'
+                    name: 'Badminton',
+                    imagePath: 'badminton.svg'
                 }, {
-                    name: 'Tafeltennis'
+                    name: 'Tafeltennis',
+                    imagePath: 'tafeltennis.svg'
                 }]
             }, {
                 title: 'Zonder een bal',
@@ -51,20 +53,19 @@ export default {
                                 doorOutside: '',
                                 side: 'left',
                                 audioPath: 'Dit is zwem sporten, wil je dit.mp3',
-                                sports: [
-                                    {
-                                        name: 'Baantjes zwemmen',
-                                        audioPath: 'Dit is baantjeszwemmen, wil je dit doen.mp3'
-                                    },
-                                    {
-                                        name: 'Vrij zwemmen',
-                                        audioPath: 'Dit is vrijzwemmen, wil je dit doen.mp3'
-                                    },
-                                    {
-                                        name: 'Aqua gym',
-                                        audioPath: 'Dit is aquagym, wil je dit doen.mp3'
-                                    }
-                                ]
+                                sports: [{
+                                    name: 'Baantjes zwemmen',
+                                    audioPath: 'Dit is baantjeszwemmen, wil je dit doen.mp3',
+                                    imagePath: 'baantjeszwemmen.svg'
+                                }, {
+                                    name: 'Vrij zwemmen',
+                                    audioPath: 'Dit is vrijzwemmen, wil je dit doen.mp3',
+                                    imagePath: 'vrijzwemmen.svg'
+                                }, {
+                                    name: 'Aqua gym',
+                                    audioPath: 'Dit is aquagym, wil je dit doen.mp3',
+                                    imagePath: 'aquagym.svg'
+                                }]
                             }, {
                                 title: 'Zonder water',
                                 doorContent: 'sportzaal.svg',
@@ -72,11 +73,14 @@ export default {
                                 side: 'right',
                                 audioPath: 'Dit is geen zwem sporten, wil je dit.mp3',
                                 sports: [{
-                                    name: 'Fitness'
+                                    name: 'Fitness',
+                                    imagePath: 'fitness.svg'
                                 }, {
-                                    name: 'Yoga'
+                                    name: 'Yoga',
+                                    imagePath: 'yoga.svg'
                                 }, {
-                                    name: 'Dansen'
+                                    name: 'Dansen',
+                                    imagePath: 'dansen.svg'
                                 }]
                             }]
                         }
@@ -87,11 +91,14 @@ export default {
                         side: 'right',
                         audioPath: 'Dit is buiten sporten, wil je dit.mp3',
                         sports: [{
-                            name: 'Hardlopen'
+                            name: 'Hardlopen',
+                            imagePath: 'hardlopen.svg'
                         }, {
-                            name: 'Fietsen'
+                            name: 'Fietsen',
+                            imagePath: 'fietsen.svg'
                         }, {
-                            name: 'Peerdrijden'
+                            name: 'Peerdrijden',
+                            imagePath: 'peerdrijden.svg'
                         }]
                     }]
                 }
@@ -109,25 +116,29 @@ export default {
             audioPath: 'uitleg keuze tussen binnen en buiten.mp3',
             options: [{
                 title: 'Binnen',
-                doorContent: 'blauw.svg',
+                doorContent: 'gymzaal.svg',
                 doorOutside: 'volleybalster met bal.svg',
                 side: 'left',
                 audioPath: 'Dit is binnen sporten, wil je dit.mp3',
                 sports: [{
-                    name: 'Basketbal'
+                    name: 'Basketbal',
+                    imagePath: 'basketballer.svg'
                 }, {
-                    name: 'Korfbal'
+                    name: 'Korfbal',
+                    imagePath: ''
                 }, {
-                    name: 'Volleybal'
+                    name: 'Volleybal',
+                    imagePath: 'volleybalster met bal.svg'
                 }]
             }, {
                 title: 'Buiten',
-                doorContent: 'blauw.svg',
+                doorContent: 'sportveld.svg',
                 doorOutside: 'voetballer met goal en bal.svg',
                 side: 'right',
                 audioPath: 'Dit is buiten sporten, wil je dit.mp3',
                 sports: [{
-                    name: 'Voetbal'
+                    name: 'Voetbal',
+                    imagePath: 'voetballer met goal en bal.svg'
                 }, {
                     name: 'Korfbal'
                 }]

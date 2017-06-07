@@ -15,7 +15,7 @@ export default {
             options: [{
                 title: 'Met een bal',
                 doorContent: 'blauw.svg',
-                doorOutside: 'pingpongtafel2.svg',
+                doorOutside: 'tafeltennis.svg',
                 side: 'left',
                 audioPath: 'Dit is met bal sporten, wil je dit.mp3',
                 sports: [{
@@ -37,7 +37,7 @@ export default {
                     audioPath: 'uitleg keuze tussen binnen en buiten.mp3',
                     options: [{
                         title: 'Binnen',
-                        doorContent: 'blauw.svg',
+                        doorContent: 'sportzaal.svg',
                         doorOutside: 'alleensportengif2.gif',
                         side: 'left',
                         audioPath: 'Dit is binnen sporten, wil je dit.mp3',

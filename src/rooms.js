@@ -132,7 +132,7 @@ export default {
                 }]
             }, {
                 title: 'Buiten',
-                doorContent: 'sportveld.svg',
+                doorContent: 'sportveldklein.svg',
                 doorOutside: 'voetballer met goal en bal.svg',
                 side: 'right',
                 audioPath: 'Dit is buiten sporten, wil je dit.mp3',

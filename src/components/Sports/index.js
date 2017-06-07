@@ -41,7 +41,7 @@ class Sports extends Component {
                 if (doorId === 0) {
                     background = "gymzaal";
                 } else {
-                    background = "veldsport";
+                    background = "sportveld";
                 }
                 break;
         }

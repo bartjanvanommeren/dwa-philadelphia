@@ -3,6 +3,11 @@
   background: url(assets/sportzaal.svg) no-repeat center center fixed;
   background-size: cover; }
 
+.sportveld {
+  height: 100vh;
+  background: url(assets/Sportveld.svg) no-repeat center center fixed;
+  background-size: cover; }
+
 .weiland {
   height: 100vh;
   background: url(assets/alleengeenbalbuitenachtergrond.svg) no-repeat center center fixed;

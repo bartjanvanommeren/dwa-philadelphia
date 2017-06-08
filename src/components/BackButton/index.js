@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import backImage from './pijl terug.svg';
+import backImage from './buttons-terug.svg';
 import './index.css';
 
 class BackButton extends Component {

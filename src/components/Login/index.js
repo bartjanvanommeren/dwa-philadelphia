@@ -4,7 +4,7 @@ import {browserHistory} from 'react-router';
 import Audio from '../Audio';
 import CaptureImage from '../CaptureImage';
 import audioPath from './Begin van sportestic.mp3';
-import startImage from './start.svg';
+import startImage from './buttons-start.svg';
 import './index.css';
 
 class Login extends Component {

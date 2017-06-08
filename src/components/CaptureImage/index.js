@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 
-import cameraImage from './camera.svg';
-import newCaptureImage from './pijl opniew.svg';
+import cameraImage from './buttons-camera.svg';
+import newCaptureImage from './buttons-opnieuw.svg';
 import './index.css';
 
 class CaptureImage extends Component {

@@ -3,8 +3,8 @@ import {browserHistory} from 'react-router';
 import Youtube from 'react-youtube';
 
 import sportsInformation from '../../sportsInformation';
-import thumbsUpImage from './thumbsup.svg';
-import thumbsDownImage from './thumbsdown.svg';
+import thumbsUpImage from './buttons-leuk.svg';
+import thumbsDownImage from './buttons-nietleuk.svg';
 import './index.css';
 
 class Information extends Component {

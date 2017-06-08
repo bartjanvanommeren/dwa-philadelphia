@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import audioImage from './audio button.svg';
+import audioImage from './buttons-audio.svg';
 import './index.css';
 
 class Audio extends Component {

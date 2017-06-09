@@ -58,7 +58,9 @@ class Sports extends Component {
             <Sport key={i}
                    name={sport.name}
                    audioPath={sport.audioPath}
-                   imagePath={sport.imagePath}/>
+                   imagePath={sport.imagePath}
+                   id={(sport.imageId !== undefined) ? sport.imageId : ''}
+            />
         ));
 
         const background = this.state.background;

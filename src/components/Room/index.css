@@ -35,3 +35,9 @@
 
 #assets :hover {
   cursor: pointer; }
+
+#pingpongtafel {
+  margin-top: -10% !important; }
+
+#samensporten {
+  width: 30% !important; }

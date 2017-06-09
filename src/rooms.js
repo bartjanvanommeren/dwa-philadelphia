@@ -15,16 +15,17 @@ export default {
             options: [{
                 title: 'Met een bal',
                 doorContent: 'gymzaal.svg',
-                doorOutside: 'tafeltennis.svg',
+                doorOutside: 'Pingpongtafel.svg',
+                imageId: 'pingpongtafel',
                 side: 'left',
                 audioPath: 'dit is met bal.mp3',
                 sportsOverviewBackground: 'gymzaal',
                 sports: [{
                     name: 'Badminton',
-                    imagePath: 'badminton.svg'
+                    imagePath: 'badmintonner.svg'
                 }, {
                     name: 'Tafeltennis',
-                    imagePath: 'tafeltennis.svg'
+                    imagePath: 'Pingpongtafel.svg'
                 }, {
                     name: 'Tennis'
                 }]
@@ -58,15 +59,18 @@ export default {
                                 sports: [{
                                     name: 'Baantjes zwemmen',
                                     audioPath: 'dit is baantjeszwemmen.mp3',
-                                    imagePath: 'baantjeszwemmen.svg'
+                                    imagePath: 'zwemmer-oud.svg',
+                                    imageId: 'zwemmer'
                                 }, {
                                     name: 'Vrij zwemmen',
                                     audioPath: 'dit is vrijzwemmen.mp3',
-                                    imagePath: 'vrijzwemmen.svg'
+                                    imagePath: 'vrijzwemmer-oud.svg',
+                                    imageId: 'vrijzwemmer'
                                 }, {
                                     name: 'Aqua gym',
                                     audioPath: 'dit is aquagym.mp3',
-                                    imagePath: 'aquagym.svg'
+                                    imagePath: 'aquagymmer-oud.svg',
+                                    imageId: 'aquagymmer'
                                 }]
                             }, {
                                 title: 'Zonder water',
@@ -77,13 +81,13 @@ export default {
                                 sportsOverviewBackground: 'sportzaal',
                                 sports: [{
                                     name: 'Fitness',
-                                    imagePath: 'fitness.svg'
+                                    imagePath: 'fitnesser.svg'
                                 }, {
                                     name: 'Yoga',
                                     imagePath: 'yoga.svg'
                                 }, {
                                     name: 'Dansen',
-                                    imagePath: 'dansen.svg'
+                                    imagePath: 'danser.svg'
                                 }]
                             }]
                         }
@@ -96,13 +100,13 @@ export default {
                         sportsOverviewBackground: 'weiland',
                         sports: [{
                             name: 'Hardlopen',
-                            imagePath: 'hardlopen.svg'
+                            imagePath: 'renner.svg'
                         }, {
                             name: 'Fietsen',
-                            imagePath: 'fietsen.svg'
+                            imagePath: 'fiets.svg'
                         }, {
-                            name: 'Paardrijden',
-                            imagePath: 'paardrijden.svg'
+                            name: 'Peerdrijden',
+                            imagePath: 'TjeerdHetPeerd.svg'
                         }]
                     }]
                 }
@@ -111,7 +115,8 @@ export default {
     }, {
         title: 'Samen',
         doorContent: 'blauw.svg',
-        doorOutside: 'teamsporters.svg',
+        doorOutside: 'samensporten.svg',
+        imageId: 'samensporten',
         side: 'right',
         audioPath: 'dit is teamsport.mp3',
         nextRoom: {
@@ -127,10 +132,11 @@ export default {
                 sportsOverviewBackground: 'gymzaal',
                 sports: [{
                     name: 'Basketbal',
-                    imagePath: 'basketballer.svg'
+                    imagePath: 'basketballer.svg',
+                    imageId: 'basketballer'
                 }, {
                     name: 'Korfbal',
-                    imagePath: ''
+                    imagePath: 'korfballer.svg'
                 }, {
                     name: 'Volleybal',
                     imagePath: 'volleybalster met bal.svg'
@@ -146,7 +152,8 @@ export default {
                     name: 'Voetbal',
                     imagePath: 'voetballer met goal en bal.svg'
                 }, {
-                    name: 'Korfbal'
+                    name: 'Korfbal',
+                    imagePath: 'korfballer.svg'
                 }]
             }]
         }

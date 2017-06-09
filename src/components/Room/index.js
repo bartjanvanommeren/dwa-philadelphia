@@ -92,6 +92,7 @@ class Room extends Component {
                 onClick={(option.nextRoom !== undefined) ?
                     this.goToRoom.bind(this, option.nextRoom.id) :
                     this.goToSports.bind(this, this.state.currentRoom.id, i)}
+                id={(option.imageId !== undefined) ? option.imageId : ''}
             />)
             : ''
         ));

@@ -18,6 +18,7 @@ export default {
                 doorOutside: 'tafeltennis.svg',
                 side: 'left',
                 audioPath: 'dit is met bal.mp3',
+                sportsOverviewBackground: 'gymzaal',
                 sports: [{
                     name: 'Badminton',
                     imagePath: 'badminton.svg'
@@ -53,6 +54,7 @@ export default {
                                 doorOutside: '',
                                 side: 'left',
                                 audioPath: 'dit is een zwemsport.mp3',
+                                sportsOverviewBackground: 'zwembad',
                                 sports: [{
                                     name: 'Baantjes zwemmen',
                                     audioPath: 'dit is baantjeszwemmen.mp3',
@@ -72,6 +74,7 @@ export default {
                                 doorOutside: '',
                                 side: 'right',
                                 audioPath: 'dit is geen zwemsport.mp3',
+                                sportsOverviewBackground: 'sportzaal',
                                 sports: [{
                                     name: 'Fitness',
                                     imagePath: 'fitness.svg'
@@ -90,6 +93,7 @@ export default {
                         doorOutside: 'alleenzonderbalbuiten.svg',
                         side: 'right',
                         audioPath: 'dit is buitensporten.mp3',
+                        sportsOverviewBackground: 'weiland',
                         sports: [{
                             name: 'Hardlopen',
                             imagePath: 'hardlopen.svg'
@@ -120,6 +124,7 @@ export default {
                 doorOutside: 'volleybalster met bal.svg',
                 side: 'left',
                 audioPath: 'dit is binnensporten.mp3',
+                sportsOverviewBackground: 'gymzaal',
                 sports: [{
                     name: 'Basketbal',
                     imagePath: 'basketballer.svg'
@@ -136,6 +141,7 @@ export default {
                 doorOutside: 'voetballer met goal en bal.svg',
                 side: 'right',
                 audioPath: 'dit is buitensporten.mp3',
+                sportsOverviewBackground: 'sportveld',
                 sports: [{
                     name: 'Voetbal',
                     imagePath: 'voetballer met goal en bal.svg'

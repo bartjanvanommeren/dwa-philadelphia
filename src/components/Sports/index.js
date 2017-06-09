@@ -21,50 +21,23 @@ class Sports extends Component {
     componentDidMount() {
         const roomId = parseInt(this.props.params.roomId, 10);
         const doorId = parseInt(this.props.params.doorId, 10);
-        var background = "";
 
-        switch (this.props.params.roomId) {
-            case "1":
-                background = "gymzaal";
-                break;
-            case "2":
-                background = "weiland";
-                break;
-            case "3":
-                if (doorId === 0) {
-                    background = "zwembad";
-                } else {
-                    background = "sportzaal";
-                }
-                break;
-            case "4":
-                if (doorId === 0) {
-                    background = "gymzaal";
-                } else {
-                    background = "sportveld";
-                }
-                break;
-            default :
-                background = 'default';
-                break;
-        }
-
-        const sports = this.findSports(this.state.rooms, roomId, doorId);
-        this.setState({sports: sports, background: background});
+        const room = this.findRoom(this.state.rooms, roomId, doorId);
+        this.setState({sports: room.sports, background: room.sportsOverviewBackground});
     }
 
-    findSports = (room, roomId, doorId) => {
+    findRoom = (room, roomId, doorId) => {
         let result;
 
         if (roomId === room.id) {
-            return room.options[doorId].sports;
+            return room.options[doorId];
         } else {
             if (room.options !== undefined) {
                 for (let i = 0; i < room.options.length; i++) {
                     const option = room.options[i];
 
                     if (option.nextRoom !== undefined) {
-                        result = this.findSports(option.nextRoom, roomId, doorId);
+                        result = this.findRoom(option.nextRoom, roomId, doorId);
 
                         if (result !== false) {
                             return result

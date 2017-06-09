@@ -42,9 +42,10 @@ class Login extends Component {
         return (
             <div id="login">
                 <div id="help-audio">
-                    <Audio audioPath={audioPath}/>
+                    <Audio audioPath={audioPath}
+                           autoPlay={true}/>
                 </div>
-                <h1>Sport testic</h1>
+                <h1>Sportestic</h1>
                 <div id="login-form">
                     <CaptureImage setImage={this.setImage.bind(this)}
                                   removeImage={this.removeImage.bind(this)}/>

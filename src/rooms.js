@@ -1,13 +1,13 @@
 export default {
     id: 0,
     question: 'Wil je alleen of samen sporten?',
-    audioPath: 'uitleg keuze tussen samen en alleen.mp3',
+    audioPath: 'uitleg keuze tussen team en geen team.mp3',
     options: [{
         title: 'Alleen',
         doorContent: 'blauw.svg',
         doorOutside: 'alleensportengif2.gif',
         side: 'left',
-        audioPath: 'Dit is alleen sporten, wil je dit.mp3',
+        audioPath: 'dit is geen teamsport.mp3',
         nextRoom: {
             id: 1,
             question: 'Wil je met een bal of zonder bal sporten?',
@@ -17,7 +17,7 @@ export default {
                 doorContent: 'gymzaal.svg',
                 doorOutside: 'tafeltennis.svg',
                 side: 'left',
-                audioPath: 'Dit is met bal sporten, wil je dit.mp3',
+                audioPath: 'dit is met bal.mp3',
                 sports: [{
                     name: 'Tennis'
                 }, {
@@ -32,7 +32,7 @@ export default {
                 doorContent: 'blauw.svg',
                 doorOutside: 'Alleengeenbal.svg',
                 side: 'right',
-                audioPath: 'Dit is zonder bal sporten, wil je dit.mp3',
+                audioPath: 'dit is zonder bal.mp3',
                 nextRoom: {
                     id: 2,
                     question: 'Wil je binnen of buiten sporten?',
@@ -42,7 +42,7 @@ export default {
                         doorContent: 'sportzaal.svg',
                         doorOutside: 'alleensportengif2.gif',
                         side: 'left',
-                        audioPath: 'Dit is binnen sporten, wil je dit.mp3',
+                        audioPath: 'dit is binnensporten.mp3',
                         nextRoom: {
                             id: 3,
                             question: 'Wil je met of zonder water sporten?',
@@ -52,18 +52,18 @@ export default {
                                 doorContent: 'zwembad klein.svg',
                                 doorOutside: '',
                                 side: 'left',
-                                audioPath: 'Dit is zwem sporten, wil je dit.mp3',
+                                audioPath: 'dit is een zwemsport.mp3',
                                 sports: [{
                                     name: 'Baantjes zwemmen',
-                                    audioPath: 'Dit is baantjeszwemmen, wil je dit doen.mp3',
+                                    audioPath: 'dit is baantjeszwemmen.mp3',
                                     imagePath: 'baantjeszwemmen.svg'
                                 }, {
                                     name: 'Vrij zwemmen',
-                                    audioPath: 'Dit is vrijzwemmen, wil je dit doen.mp3',
+                                    audioPath: 'dit is vrijzwemmen.mp3',
                                     imagePath: 'vrijzwemmen.svg'
                                 }, {
                                     name: 'Aqua gym',
-                                    audioPath: 'Dit is aquagym, wil je dit doen.mp3',
+                                    audioPath: 'dit is aquagym.mp3',
                                     imagePath: 'aquagym.svg'
                                 }]
                             }, {
@@ -71,7 +71,7 @@ export default {
                                 doorContent: 'sportzaal.svg',
                                 doorOutside: '',
                                 side: 'right',
-                                audioPath: 'Dit is geen zwem sporten, wil je dit.mp3',
+                                audioPath: 'dit is geen zwemsport.mp3',
                                 sports: [{
                                     name: 'Fitness',
                                     imagePath: 'fitness.svg'
@@ -89,7 +89,7 @@ export default {
                         doorContent: 'weiland2.svg',
                         doorOutside: 'alleenzonderbalbuiten.svg',
                         side: 'right',
-                        audioPath: 'Dit is buiten sporten, wil je dit.mp3',
+                        audioPath: 'dit is buitensporten.mp3',
                         sports: [{
                             name: 'Hardlopen',
                             imagePath: 'hardlopen.svg'
@@ -109,7 +109,7 @@ export default {
         doorContent: 'blauw.svg',
         doorOutside: 'teamsporters.svg',
         side: 'right',
-        audioPath: 'Dit is samen sporten, wil je dit.mp3',
+        audioPath: 'dit is teamsport.mp3',
         nextRoom: {
             id: 4,
             question: 'Wil je binnen of buiten sporten?',
@@ -119,7 +119,7 @@ export default {
                 doorContent: 'gymzaal.svg',
                 doorOutside: 'volleybalster met bal.svg',
                 side: 'left',
-                audioPath: 'Dit is binnen sporten, wil je dit.mp3',
+                audioPath: 'dit is binnensporten.mp3',
                 sports: [{
                     name: 'Basketbal',
                     imagePath: 'basketballer.svg'
@@ -135,7 +135,7 @@ export default {
                 doorContent: 'sportveldklein.svg',
                 doorOutside: 'voetballer met goal en bal.svg',
                 side: 'right',
-                audioPath: 'Dit is buiten sporten, wil je dit.mp3',
+                audioPath: 'dit is buitensporten.mp3',
                 sports: [{
                     name: 'Voetbal',
                     imagePath: 'voetballer met goal en bal.svg'

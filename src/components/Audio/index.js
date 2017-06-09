@@ -4,6 +4,11 @@ import audioImage from './buttons-audio.svg';
 import './index.css';
 
 class Audio extends Component {
+    componentDidUpdate() {
+        if (this.props.autoPlay) {
+            this.playAudio();
+        }
+    };
 
     playAudio = () => {
         const audioPlayer = document.getElementById('audio-player');

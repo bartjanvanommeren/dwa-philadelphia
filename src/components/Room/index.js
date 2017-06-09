@@ -104,7 +104,8 @@ class Room extends Component {
             <div>
                 <div id="wall">
                     <div id="help-audio">
-                        <Audio audioPath={process.env.PUBLIC_URL + '/audio/' + this.state.currentRoom.audioPath}/>
+                        <Audio audioPath={process.env.PUBLIC_URL + '/audio/' + this.state.currentRoom.audioPath}
+                               autoPlay={true}/>
                     </div>
                     <div id="doors">
                         {doors}

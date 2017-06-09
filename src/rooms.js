@@ -19,13 +19,13 @@ export default {
                 side: 'left',
                 audioPath: 'Dit is met bal sporten, wil je dit.mp3',
                 sports: [{
-                    name: 'Tennis'
-                }, {
                     name: 'Badminton',
                     imagePath: 'badminton.svg'
                 }, {
                     name: 'Tafeltennis',
                     imagePath: 'tafeltennis.svg'
+                }, {
+                    name: 'Tennis'
                 }]
             }, {
                 title: 'Zonder een bal',

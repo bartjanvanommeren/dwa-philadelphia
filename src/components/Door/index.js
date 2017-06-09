@@ -20,7 +20,7 @@ class Door extends Component {
                     <div className="doorDiv" onClick={this.props.goToRoom}>
                         <img src={doorImage}
                              className="doorBackgroundImg"
-                             alt='door image'/>
+                             alt='door'/>
                         <img src={this.props.doorContent}
                              alt={this.props.doorContent}
                              className="doorForegroundImg"/>

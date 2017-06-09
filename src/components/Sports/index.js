@@ -44,6 +44,9 @@ class Sports extends Component {
                     background = "sportveld";
                 }
                 break;
+            default :
+                background = 'default';
+                break;
         }
 
         const sports = this.findSports(this.state.rooms, roomId, doorId);

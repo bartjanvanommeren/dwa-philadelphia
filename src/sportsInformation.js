@@ -6,15 +6,15 @@ export default {
         },
         information: 'Lorem ipsum dolar sit amet'
     },
-    "Badminton": {
-        videoId: '8G-3CEuXQjg',
+    "Tafeltennis": {
+        videoId: 'PDsgv7h4BZ0',
         playerVars: {
             start: 0
         },
         information: 'Lorem ipsum dolar sit amet'
     },
-    "Tafeltennis": {
-        videoId: 'PDsgv7h4BZ0',
+    "Badminton": {
+        videoId: '8G-3CEuXQjg',
         playerVars: {
             start: 0
         },
@@ -76,7 +76,7 @@ export default {
         },
         information: 'Lorem ipsum dolar sit amet'
     },
-    "Peerdrijden": {
+    "Paardrijden": {
         videoId: 'lksRLRfjA2E',
         playerVars: {
             start: 0

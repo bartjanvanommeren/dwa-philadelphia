@@ -76,7 +76,7 @@ export default {
         },
         information: 'Lorem ipsum dolar sit amet'
     },
-    "Peerdrijden": {
+    "Paardrijden": {
         videoId: 'lksRLRfjA2E',
         playerVars: {
             start: 0

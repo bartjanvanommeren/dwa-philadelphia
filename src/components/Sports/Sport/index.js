@@ -14,6 +14,7 @@ class Sport extends Component {
             <div className="audioContainer">
                 <Audio className="audio" audioPath={process.env.PUBLIC_URL + "/audio/" + this.props.audioPath}/>
                 <div className="sportDescriptionContainer" onClick={this.goToInformation.bind(this, this.props.name)}>
+                <h2>{this.props.name}</h2>
                     <img 
                         alt={this.props.name} 
                         className="sportImage" 

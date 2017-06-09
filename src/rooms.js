@@ -97,8 +97,8 @@ export default {
                             name: 'Fietsen',
                             imagePath: 'fietsen.svg'
                         }, {
-                            name: 'Peerdrijden',
-                            imagePath: 'peerdrijden.svg'
+                            name: 'Paardrijden',
+                            imagePath: 'paardrijden.svg'
                         }]
                     }]
                 }

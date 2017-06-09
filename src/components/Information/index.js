@@ -31,8 +31,6 @@ class Information extends Component {
                 sportInformation: sport,
                 opts: opts
             });
-
-        console.log(this.state.sportInformation);
     };
 
     goBack = () => {

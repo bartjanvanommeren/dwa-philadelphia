@@ -105,8 +105,8 @@ export default {
                             name: 'Fietsen',
                             imagePath: 'fiets.svg'
                         }, {
-                            name: 'Peerdrijden',
-                            imagePath: 'TjeerdHetPeerd.svg'
+                            name: 'Paardrijden',
+                            imagePath: 'paardrijden.svg'
                         }]
                     }]
                 }

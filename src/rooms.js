@@ -14,7 +14,7 @@ export default {
             audioPath: 'uitleg keuze tussen bal en zonder bal.mp3',
             options: [{
                 title: 'Met een bal',
-                doorContent: 'gymzaal.svg',
+                doorContent: 'gymzaal deur.svg',
                 doorOutside: 'Pingpongtafel.svg',
                 imageId: 'pingpongtafel',
                 side: 'left',
@@ -125,7 +125,7 @@ export default {
             audioPath: 'uitleg keuze tussen binnen en buiten.mp3',
             options: [{
                 title: 'Binnen',
-                doorContent: 'gymzaal.svg',
+                doorContent: 'gymzaal deur.svg',
                 doorOutside: 'volleybalster met bal.svg',
                 side: 'left',
                 audioPath: 'dit is binnensporten.mp3',

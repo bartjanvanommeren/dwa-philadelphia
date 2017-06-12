@@ -3,7 +3,7 @@ export default {
     question: 'Wil je alleen of samen sporten?',
     audioPath: 'uitleg keuze tussen team en geen team.mp3',
     options: [{
-        title: 'Alleen',
+        title: 'Geen team',
         doorContent: 'blauw.svg',
         doorOutside: 'alleensportengif2.gif',
         side: 'left',
@@ -116,7 +116,7 @@ export default {
             }]
         }
     }, {
-        title: 'Samen',
+        title: 'Team',
         doorContent: 'blauw.svg',
         doorOutside: 'samensporten.svg',
         imageId: 'samensporten',

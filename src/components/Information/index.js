@@ -6,6 +6,7 @@ import sportsInformation from '../../sportsInformation';
 import thumbsUpImage from './buttons-leuk.svg';
 import thumbsDownImage from './buttons-nietleuk.svg';
 import './index.css';
+import Audio from "../Audio/index";
 
 class Information extends Component {
     constructor(props) {
@@ -40,6 +41,10 @@ class Information extends Component {
     render() {
         return (
             <div id="information-container">
+                <div id="help-audio">
+                    <Audio audioPath={process.env.PUBLIC_URL + '/audio/' + this.state.sportInformation.audio}
+                           autoPlay={true}/>
+                </div>
                 <div className="videoContainer">
                     <h1>{this.state.sport}</h1>
                     <Youtube videoId={this.state.sportInformation.videoId} opts={this.state.opts}/>

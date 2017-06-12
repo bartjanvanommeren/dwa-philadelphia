@@ -1,6 +1,10 @@
 #information-container {
   background-color: #deecf9;
   height: 100vh; }
+  #information-container #audio-helper {
+    position: absolute;
+    top: 1%;
+    left: 1%; }
 
 .videoContainer {
   position: fixed;
@@ -19,18 +23,18 @@ iframe {
   height: 100%; }
 
 .like {
-  width: 15vh;
-  height: 15vh;
+  width: 25vh;
+  height: 25vh;
   position: fixed;
-  top: 100px;
-  right: 100px; }
+  top: 15%;
+  right: 5%; }
 
 .dislike {
-  width: 15vh;
-  height: 15vh;
+  width: 25vh;
+  height: 25vh;
   position: fixed;
-  bottom: 100px;
-  right: 100px; }
+  bottom: -2%;
+  right: 5%; }
 
 .like:hover {
   cursor: pointer; }

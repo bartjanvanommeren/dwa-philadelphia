@@ -39,7 +39,8 @@ export default {
         playerVars: {
             start: 19
         },
-        information: 'Lorem ipsum dolar sit amet'
+        information: 'Lorem ipsum dolar sit amet',
+        audio: 'video aquagym keuze.mp3'
     },
     "Fitness": {
         videoId: '0IXTOMSEKp4',

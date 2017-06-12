@@ -16,8 +16,9 @@
   justify-content: space-around; }
 
 #help-audio {
-  float: left;
-  margin: 10px; }
+  position: absolute;
+  top: 1%;
+  left: 1%; }
 
 #assets .left {
   width: 25%;

@@ -1,55 +1,56 @@
 #wall {
-    width: 100%;
-    height: 70vh;
-    background: #ffffdd;
+  width: 100%;
+  height: 70vh;
+  background: #ffffdd;
 
-    position: relative;
+  position: relative;
 }
 
 #floor {
-    width: 100%;
-    height: 30vh;
-    background: #dfc2a4;
+  width: 100%;
+  height: 30vh;
+  background: #dfc2a4;
 
-    position: relative;
+  position: relative;
 }
 
 #doors {
-    height: 70vh;
-    display: flex;
-    justify-content: space-around;
+  height: 70vh;
+  display: flex;
+  justify-content: space-around;
 }
 
 #help-audio {
-    float: left;
-    margin: 10px;
+  position: absolute;
+  top: 1%;
+  left: 1%;
 }
 
 #assets {
-    .left {
-        width: 25%;
-        margin-left: 10%;
-        margin-top: -15%;
-        position: absolute;
-        z-index: 1;
-    }
-    .right {
-        width: 25%;
-        margin-left: 60%;
-        margin-top: -15%;
-        position: absolute;
-        z-index: 1;
-    }
-    :hover {
-      cursor: pointer;
-    }
+  .left {
+    width: 25%;
+    margin-left: 10%;
+    margin-top: -15%;
+    position: absolute;
+    z-index: 1;
+  }
+  .right {
+    width: 25%;
+    margin-left: 60%;
+    margin-top: -15%;
+    position: absolute;
+    z-index: 1;
+  }
+  :hover {
+    cursor: pointer;
+  }
 
 }
 
 #pingpongtafel {
-    margin-top: -10% !important;
+  margin-top: -10% !important;
 }
 
 #samensporten {
-    width: 30% !important;
+  width: 30% !important;
 }

@@ -56,21 +56,22 @@ export default {
                                 side: 'left',
                                 audioPath: 'dit is een zwemsport.mp3',
                                 sportsOverviewBackground: 'zwembad',
+                                sportsOverviewAudio: 'keuzes bij zwemmen.mp3',
                                 sports: [{
-                                    name: 'Baantjes zwemmen',
-                                    audioPath: 'dit is baantjeszwemmen.mp3',
-                                    imagePath: 'zwemmer-oud.svg',
-                                    imageId: 'zwemmer'
+                                    name: 'Aqua gym',
+                                    audioPath: 'dit is aquagym.mp3',
+                                    imagePath: 'aquagymmer-oud.svg',
+                                    imageId: 'aquagymmer'
                                 }, {
                                     name: 'Vrij zwemmen',
                                     audioPath: 'dit is vrijzwemmen.mp3',
                                     imagePath: 'vrijzwemmer-oud.svg',
                                     imageId: 'vrijzwemmer'
                                 }, {
-                                    name: 'Aqua gym',
-                                    audioPath: 'dit is aquagym.mp3',
-                                    imagePath: 'aquagymmer-oud.svg',
-                                    imageId: 'aquagymmer'
+                                    name: 'Baantjes zwemmen',
+                                    audioPath: 'dit is baantjeszwemmen.mp3',
+                                    imagePath: 'zwemmer-oud.svg',
+                                    imageId: 'zwemmer'
                                 }]
                             }, {
                                 title: 'Zonder water',

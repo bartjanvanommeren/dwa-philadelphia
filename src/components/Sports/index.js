@@ -5,6 +5,7 @@ import rooms from '../../rooms';
 import Sport from "./Sport";
 import BackButton from "../BackButton";
 import './index.css';
+import Audio from "../Audio/index";
 
 class Sports extends Component {
 
@@ -14,7 +15,8 @@ class Sports extends Component {
         this.state = {
             rooms: rooms,
             sports: [],
-            background: "test"
+            background: "test",
+            audio: ''
         };
     }
 
@@ -23,7 +25,12 @@ class Sports extends Component {
         const doorId = parseInt(this.props.params.doorId, 10);
 
         const room = this.findRoom(this.state.rooms, roomId, doorId);
-        this.setState({sports: room.sports, background: room.sportsOverviewBackground});
+
+        this.setState({
+            sports: room.sports,
+            background: room.sportsOverviewBackground,
+            audio: room.sportsOverviewAudio
+        });
     }
 
     findRoom = (room, roomId, doorId) => {
@@ -67,6 +74,10 @@ class Sports extends Component {
 
         return (
             <div className={background}>
+                <div id="help-audio">
+                    <Audio audioPath={process.env.PUBLIC_URL + "/audio/" + this.state.audio}
+                           autoPlay={true}/>
+                </div>
                 <div className="filler"></div>
                 <div id="options">
                     {sports}

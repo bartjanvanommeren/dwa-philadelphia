@@ -3,12 +3,12 @@
 
 .sportzaal {
   height: 100vh;
-  background: url(assets/sportzaalgroot.svg) no-repeat center center fixed;
+  background: url(assets/sportzaal.svg) no-repeat center center fixed;
   background-size: cover; }
 
 .sportveld {
   height: 100vh;
-  background: url(assets/Sportveld.svg) no-repeat center center fixed;
+  background: url(assets/sportveld.svg) no-repeat center center fixed;
   background-size: cover; }
 
 .weiland {
@@ -21,9 +21,14 @@
   background: url(assets/zwembad.svg) no-repeat center center fixed;
   background-size: cover; }
 
-.gymzaal {
+.gymzaal-alleen {
   height: 100vh;
-  background: url(assets/gymzaal.svg) no-repeat center center fixed;
+  background: url(assets/gymzaal-alleen.svg) no-repeat center center fixed;
+  background-size: cover; }
+
+.gymzaal-samen {
+  height: 100vh;
+  background: url(assets/gymzaal-samen.svg) no-repeat center center fixed;
   background-size: cover; }
 
 #help-audio {
@@ -41,3 +46,7 @@
 .filler {
   width: 100vh;
   height: 45vh; }
+
+#volleyballer {
+  margin-right: 25%;
+  margin-top: 10%; }

@@ -19,7 +19,7 @@ export default {
                 imageId: 'pingpongtafel',
                 side: 'left',
                 audioPath: 'dit is met bal.mp3',
-                sportsOverviewBackground: 'gymzaal',
+                sportsOverviewBackground: 'gymzaal-alleen',
                 sports: [{
                     name: 'Badminton',
                     imagePath: 'badmintonner.svg'
@@ -132,18 +132,19 @@ export default {
                 doorOutside: 'volleybalster met bal.svg',
                 side: 'left',
                 audioPath: 'dit is binnensporten.mp3',
-                sportsOverviewBackground: 'gymzaal',
+                sportsOverviewBackground: 'gymzaal-samen',
                 sportsOverviewAudio: 'keuzes bij balsport binnen.mp3',
-                sports: [{
+                sports: [ {
+                    name: 'Volleybal',
+                    imagePath: 'volleybalster met bal.svg',
+                    imageId: 'volleyballer'
+                }, {
+                    name: 'Korfbal',
+                    imagePath: 'korfballerbinnen.svg'
+                }, {
                     name: 'Basketbal',
                     imagePath: 'basketballer.svg',
                     imageId: 'basketballer'
-                }, {
-                    name: 'Korfbal',
-                    imagePath: 'korfballer.svg'
-                }, {
-                    name: 'Volleybal',
-                    imagePath: 'volleybalster met bal.svg'
                 }]
             }, {
                 title: 'Buiten',

@@ -4,7 +4,7 @@ import {browserHistory} from 'react-router';
 import Audio from '../Audio';
 import CaptureImage from '../CaptureImage';
 import audioPath from './Begin van sportestic.mp3';
-import startImage from './buttons-start.svg';
+import startButtonImage from './buttons-start.svg';
 import './index.css';
 
 class Login extends Component {
@@ -51,7 +51,7 @@ class Login extends Component {
                                   removeImage={this.removeImage.bind(this)}/>
                     {(this.state.canStart) ?
                         <div id="start-button">
-                            <img src={startImage}
+                            <img src={startButtonImage}
                                  alt="Start knop"
                                  onClick={this.start.bind(this)}/>
                         </div> :

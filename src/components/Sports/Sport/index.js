@@ -11,15 +11,15 @@ class Sport extends Component {
 
     render() {
         return (
-            <div className="audioContainer">
+            <div>
                 <Audio className="audio" audioPath={process.env.PUBLIC_URL + "/audio/" + this.props.audioPath}/>
                 <div className="sportDescriptionContainer" onClick={this.goToInformation.bind(this, this.props.name)}>
-                <h2>{this.props.name}</h2>
-                    <img 
+                    <h2>{this.props.name}</h2>
+                    <img
                         alt={this.props.name}
                         className="sportImage"
                         id={this.props.id}
-                        src={process.env.PUBLIC_URL + '/assets/' + this.props.imagePath} />
+                        src={process.env.PUBLIC_URL + '/assets/' + this.props.imagePath}/>
                 </div>
             </div>
         )

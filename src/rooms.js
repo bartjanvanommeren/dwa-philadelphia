@@ -4,7 +4,7 @@ export default {
     audioPath: 'uitleg keuze tussen team en geen team.mp3',
     options: [{
         title: 'Geen team',
-        doorContent: 'blauw.svg',
+        doorContent: 'generic invuldeur.svg',
         doorOutside: 'alleensportengif2.gif',
         side: 'left',
         audioPath: 'dit is geen teamsport.mp3',
@@ -31,7 +31,7 @@ export default {
                 }]
             }, {
                 title: 'Zonder een bal',
-                doorContent: 'blauw.svg',
+                doorContent: 'generic invuldeur.svg',
                 doorOutside: 'Alleengeenbal.svg',
                 side: 'right',
                 audioPath: 'dit is zonder bal.mp3',
@@ -117,7 +117,7 @@ export default {
         }
     }, {
         title: 'Team',
-        doorContent: 'blauw.svg',
+        doorContent: 'generic invuldeur.svg',
         doorOutside: 'samensporten.svg',
         imageId: 'samensporten',
         side: 'right',

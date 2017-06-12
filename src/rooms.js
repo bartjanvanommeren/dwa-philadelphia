@@ -80,6 +80,7 @@ export default {
                                 side: 'right',
                                 audioPath: 'dit is geen zwemsport.mp3',
                                 sportsOverviewBackground: 'sportzaal',
+                                sportsOverviewAudio: '',
                                 sports: [{
                                     name: 'Fitness',
                                     imagePath: 'fitnesser.svg'
@@ -99,6 +100,7 @@ export default {
                         side: 'right',
                         audioPath: 'dit is buitensporten.mp3',
                         sportsOverviewBackground: 'weiland',
+                        sportsOverviewAudio: 'keuzes bij buitensport.mp3',
                         sports: [{
                             name: 'Hardlopen',
                             imagePath: 'renner.svg'
@@ -131,6 +133,7 @@ export default {
                 side: 'left',
                 audioPath: 'dit is binnensporten.mp3',
                 sportsOverviewBackground: 'gymzaal',
+                sportsOverviewAudio: 'keuzes bij balsport binnen.mp3',
                 sports: [{
                     name: 'Basketbal',
                     imagePath: 'basketballer.svg',
@@ -149,6 +152,7 @@ export default {
                 side: 'right',
                 audioPath: 'dit is buitensporten.mp3',
                 sportsOverviewBackground: 'sportveld',
+                sportsOverviewAudio: 'keuzes bij balsport buiten.mp3',
                 sports: [{
                     name: 'Voetbal',
                     imagePath: 'voetballer met goal en bal.svg'

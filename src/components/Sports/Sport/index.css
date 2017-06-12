@@ -11,9 +11,23 @@
 #basketballer {
   width: 25%; }
 
+#basketballer-container {
+  position: absolute;
+  top: 25%;
+  right: 0; }
+
+#korfballer-container {
+  position: absolute;
+  top: 30%; }
+
 #volleyballer {
   margin-top: 10%;
   margin-right: 25%; }
+
+#volleyballer-container {
+  position: absolute;
+  top: 30%;
+  left: 5%; }
 
 #aquagymmer,
 #zwemmer,

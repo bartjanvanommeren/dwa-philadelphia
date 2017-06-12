@@ -140,7 +140,8 @@ export default {
                     imageId: 'volleyballer'
                 }, {
                     name: 'Korfbal',
-                    imagePath: 'korfballerbinnen.svg'
+                    imagePath: 'korfballerbinnen.svg',
+                    imageId: 'korfballer'
                 }, {
                     name: 'Basketbal',
                     imagePath: 'basketballer.svg',

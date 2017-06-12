@@ -11,7 +11,7 @@ class Sport extends Component {
 
     render() {
         return (
-            <div>
+            <div id={this.props.id + '-container'}>
                 <Audio audioPath={process.env.PUBLIC_URL + "/audio/" + this.props.audioPath}
                        autoPlay={true}/>
                 <div className="sportDescriptionContainer" onClick={this.goToInformation.bind(this, this.props.name)}>

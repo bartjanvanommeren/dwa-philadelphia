@@ -106,7 +106,7 @@ export default {
                             imagePath: 'renner.svg'
                         }, {
                             name: 'Fietsen',
-                            imagePath: 'fiets.svg'
+                            imagePath: 'fietsen.svg'
                         }, {
                             name: 'Paardrijden',
                             imagePath: 'paardrijden.svg'

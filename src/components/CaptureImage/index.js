@@ -10,8 +10,8 @@ class CaptureImage extends Component {
         super(props);
 
         this.state = {
-            width: 320,
-            height: 240,
+            width: 480,
+            height: 360,
             streaming: false,
             imageCaptured: false,
             stream: false
@@ -45,12 +45,13 @@ class CaptureImage extends Component {
 
         if (!this.state.streaming) {
             this.setState({
-                height: video.videoHeight / (video.videoWidth / this.state.width),
                 streaming: true
             });
 
             video.setAttribute('width', this.state.width);
             video.setAttribute('height', this.state.height);
+            video.classList.remove('hidden');
+
             canvas.setAttribute('width', this.state.width);
             canvas.setAttribute('height', this.state.height);
             photo.setAttribute('width', this.state.width);
@@ -88,7 +89,6 @@ class CaptureImage extends Component {
 
         const context = canvas.getContext('2d');
         context.fillStyle = "#AAA";
-        context.fillRect(0, 0, canvas.width, canvas.height);
 
         const data = canvas.toDataURL('image/png');
         photo.setAttribute('src', data);

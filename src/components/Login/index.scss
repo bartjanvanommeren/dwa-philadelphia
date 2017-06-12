@@ -4,7 +4,7 @@
   background-size: cover;
   > h1 {
     text-align: center;
-    padding: 15px;
+    font-size: 4em;
   }
 }
 
@@ -12,12 +12,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 5vh;
 }
 
 #start-button {
   width: 200px;
   height: 80px;
-  margin-top: 50px;
+  margin-top: 5vh;
   :hover {
     cursor: pointer;
   }

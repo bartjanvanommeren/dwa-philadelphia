@@ -1,11 +1,15 @@
 #video {
-  background: #AAA; }
+  background: #AAA;
+  width: 480px;
+  height: 360px; }
 
 #canvas {
   display: none; }
 
 #photo {
-  background: #AAA; }
+  background: #AAA;
+  width: 480px;
+  height: 360px; }
 
 .hidden {
   display: none; }

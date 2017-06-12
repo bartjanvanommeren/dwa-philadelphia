@@ -4,16 +4,17 @@
   background-size: cover; }
   #login > h1 {
     text-align: center;
-    padding: 15px; }
+    font-size: 4em; }
 
 #login-form {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  margin-top: 5vh; }
 
 #start-button {
   width: 200px;
   height: 80px;
-  margin-top: 50px; }
+  margin-top: 5vh; }
   #start-button :hover {
     cursor: pointer; }

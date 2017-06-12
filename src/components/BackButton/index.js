@@ -6,7 +6,9 @@ import './index.css';
 class BackButton extends Component {
     render() {
         return (
-            <div id="back-button" onClick={this.props.goBack}>
+            <div id="back-button"
+                 className="button"
+                 onClick={this.props.goBack}>
                 <img src={backImage}
                      alt="back button"/>
             </div>

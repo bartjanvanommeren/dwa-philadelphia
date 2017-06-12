@@ -50,12 +50,14 @@ class Information extends Component {
                     <Youtube videoId={this.state.sportInformation.videoId} opts={this.state.opts}/>
                     <p>{this.state.sportInformation.information}</p>
                 </div>
-                <div className="like" onClick={this.goBack}>
+                <div className="like button"
+                     onClick={this.goBack}>
                     <img src={thumbsUpImage}
                          alt="like"
                          draggable="false"/>
                 </div>
-                <div className="dislike" onClick={this.goBack}>
+                <div className="dislike button"
+                     onClick={this.goBack}>
                     <img src={thumbsDownImage}
                          alt="dislike"
                          draggable="false"/>

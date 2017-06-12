@@ -23,17 +23,17 @@ iframe {
   height: 100%; }
 
 .like {
-  width: 25vh;
-  height: 25vh;
+  width: 24vh;
+  height: 8vh;
   position: fixed;
   top: 15%;
   right: 5%; }
 
 .dislike {
-  width: 25vh;
-  height: 25vh;
+  width: 24vh;
+  height: 8vh;
   position: fixed;
-  bottom: -2%;
+  bottom: 16%;
   right: 5%; }
 
 .like:hover {

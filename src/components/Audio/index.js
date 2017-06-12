@@ -25,6 +25,7 @@ class Audio extends Component {
             <div className="help-audio"
                  onClick={this.playAudio.bind(this)}>
                 <img src={audioImage}
+                     className="button"
                      alt="audio button"/>
             </div>
         );

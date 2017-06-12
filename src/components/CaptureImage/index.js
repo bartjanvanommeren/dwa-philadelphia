@@ -115,7 +115,8 @@ class CaptureImage extends Component {
                          alt="Maak een foto van jezelf"/>
                 </div>
                 <div id="capture-image-button-wrapper">
-                    <div id="capture-image-button">
+                    <div id="capture-image-button"
+                         className="button">
                         {(!this.state.imageCaptured) ?
                             <img src={cameraImage}
                                  alt="Neem een foto"

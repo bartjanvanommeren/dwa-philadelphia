@@ -52,7 +52,8 @@ class Login extends Component {
                     <CaptureImage setImage={this.setImage.bind(this)}
                                   removeImage={this.removeImage.bind(this)}/>
                     {(this.state.canStart) ?
-                        <div id="start-button">
+                        <div id="start-button"
+                             className="button">
                             <img src={startButtonImage}
                                  alt="Start knop"
                                  onClick={this.start.bind(this)}/>

@@ -1,38 +1,15 @@
-# Minor Multi Philedelphia
+# Minor Multi Philadelphia Software Guidebook  
+In dit software guidebook is een korte samenvatting van de Sportestic app. Voorafgaand aan de inhoud is er een uitleg hoe de applicatie opgestart moet worden en welke vereisten hiervoor zijn. Vervolgens zijn de requirements weergegeven, gevolgd door een mappenstructuur en de gebruikte libraries. Dit document is een toevoeging bij het Functioneel Ontwerp.
 
-This README will give you a short summary of the Philadelphia App. We start with a walkthrough into getting this project up and running. Further we will list the requirements, architecture and external libraries used.
+### Versies
+0.3.0
 
-This app will be an interactive site that will help people with Down syndrome with choosing a sport that fits them.
-
-### Version
-0.1.0
-
-### Authors
+### Auteurs  
 - Bart-Jan van Ommeren
-- Frank Schutte
 - Albert Veldman
+- Frank Schutte
 
-## Installation
-```
-git clone https://github.com/bartjanvanommeren/multi-minor-philadelphia.git
-npm install
-npm run start-local
-```
-## Requirements
-### MUST
-- The app informs the users about sports
-### SHOULD
-- The user has the option to navigate back
-- The app suggests sports that will fit the user
-- The app will support tablet
-- The app will support desktop
- 
-## Mockups
-The app will be an interactive questionare that hides beneath a playfull layer to captivate the user. The app will start out in a room with two to three doors the user can take, when the user clicks on one of the doors he will be taken to the next room (page) where he will be presented with two to three options again. The app will continue presenting the user different options until there is enough data to present the user which sports will best fit him, this will be an final room where the user can see several sports, when the user clicks on one of the sports he will get more information about that sport.
-
-[here](https://sportestic.herokuapp.com/information/Yoga) you can find a live demo of the app to see what the app looks like.
-
-## Architecture
+## Mappen structuur
 ```
 root
 │   README.md
@@ -43,77 +20,66 @@ root
 └───public
 │    │   index.html
 │    │   manifest.json
+|    └───assets
+|    |    |   example.svg
+|    └───audio
+|    |    |   example.mp3   
+|    
 │   
 └───server
 |    │   index.js
 |
 └───src
 |    |   index.js
-|    |   index.css
+|    |   index.scss
+|    |   rooms.js
+|    |   sportsInformation.js
 |    |
 |    └───components
 |    |    └───component1
-|    |    |    |   component1.js
-|    |    |    |   component1.scss
+|    |    |    |   index.js
+|    |    |    |   index.scss
 |    |    |
 |    |    └───component2
-|    |    |    |   component2.js
-|    |    |    |   component2.scss
+|    |    |    |   index.js
+|    |    |    |   index.scss
 |    |    |
 ```
+### Opmerkingen
+Hieronder een uitleg van een aantal bestanden uit de mappen structuur die hierboven is weergegeven.
+* rooms.js: In dit bestand staat een JSON structuur met alle data waarmee de applicatie is opgebouwd.
+Hier kunnen assets, pagina volgorde en teksten worden toegevoegd en aangepast.  
+* sportsInformation.js: In dit bestand staat een JSON structuur met alle informatie over de verschillende sporten.
+Hier kunnen de video's en teksten worden aangepast die bij een sport worden weergegeven.  
 
-## React Components
-Here you can find a list of planned components, we plan to split jsx and logical code staying true to the MVVM pattern.
-
-App -
-Wrapper component contains the app.
-
-Audio -
-Component to handle playback of audio components.
-
-BackButton -
-Handles back navigation.
-
-CaptureImage - 
-Component for taking images with device camera.
-
-Door -
-Reusable component, can contain, can be animated navigates to new page when clicked, can play audio, is dynamic in content.
-
-Information -
-Info page of the selected sport.
-
-Room -
-Container component can either contain door type content or choice type content
-
-Login - 
-Landing page of the app.
-
-Notfound - 
-404 page.
-
-Sports - 
-Component for displaying sports where needed.
+## Installatie
+```
+git clone https://github.com/bartjanvanommeren/multi-minor-philadelphia.git
+npm install
+npm run start-local
+```
 
 ## Routes
 ``/`` <br> 
-Root used as landing page.
+Startpagina waarop de gebruiker een foto maakt.
 
 ``/room/#`` <br> 
-Rooms the user traverses during the app.
+Ruimtes waar de gebruiker keuzes maakt in verschillende categorieën.
 
 ``/room/#/#`` <br> 
-Final rooms where the user can choose a sport.
+Ruimte waar de gebruiker keuzes maakt tussen drie verschillende sporten.
 
 ``/information/example`` <br> 
-Info page for selected sport.
+Informatiepagina met een video over de geselecteerde sport.
 
-## External libraries
-Libary name | Version
+## Gebruikte libraries
+Libary naam | Versie
 --- | ---
 [NodeJS](https://nodejs.org/en/) | 6.10.0
 [React](https://facebook.github.io/react/) | 15.5.4
-[Velocity React](https://github.com/twitter-fabric/velocity-react) | 1.3.3
 [Express](https://expressjs.com/) | 4.15.3
 [React-Router](https://github.com/ReactTraining/react-router) | 2.8.1
 [React-Youtube](https://github.com/ReactTraining/react-router) | 7.4.0
+
+## Demo versie
+De Sportestic applicatie draait op een Heroku server. Deze is bereikbaar via [http://sportestic.herokuapp.com/].

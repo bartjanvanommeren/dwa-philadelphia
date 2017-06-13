@@ -15,7 +15,7 @@ export default {
             options: [{
                 title: 'Met een bal',
                 doorContent: 'gymzaal deur.svg',
-                doorOutside: 'Pingpongtafel.svg',
+                doorOutside: 'tafeltennisser met tafel.svg',
                 imageId: 'pingpongtafel',
                 side: 'left',
                 audioPath: 'dit is met bal.mp3',
@@ -25,9 +25,10 @@ export default {
                     imagePath: 'badmintonner.svg'
                 }, {
                     name: 'Tafeltennis',
-                    imagePath: 'tafeltenniser.svg'
+                    imagePath: 'tafeltennisser.svg'
                 }, {
-                    name: 'Tennis'
+                    name: 'Tennis',
+                    imagePath: 'tennisser.svg'
                 }]
             }, {
                 title: 'Zonder een bal',
@@ -128,7 +129,7 @@ export default {
             audioPath: 'uitleg keuze tussen binnen en buiten.mp3',
             options: [{
                 title: 'Binnen',
-                doorContent: 'gymzaal deur.svg',
+                doorContent: 'team binnen deur.svg',
                 doorOutside: 'volleybalster met bal.svg',
                 side: 'left',
                 audioPath: 'dit is binnensporten.mp3',

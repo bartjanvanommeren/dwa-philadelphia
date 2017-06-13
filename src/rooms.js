@@ -76,7 +76,7 @@ export default {
                             }, {
                                 title: 'Zonder water',
                                 doorContent: 'sportzaal.svg',
-                                doorOutside: '',
+                                doorOutside: 'yoga.svg',
                                 side: 'right',
                                 audioPath: 'dit is geen zwemsport.mp3',
                                 sportsOverviewBackground: 'sportzaal',

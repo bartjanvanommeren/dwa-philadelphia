@@ -25,7 +25,7 @@ export default {
                     imagePath: 'badmintonner.svg'
                 }, {
                     name: 'Tafeltennis',
-                    imagePath: 'Pingpongtafel.svg'
+                    imagePath: 'tafeltenniser.svg'
                 }, {
                     name: 'Tennis'
                 }]

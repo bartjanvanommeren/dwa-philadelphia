@@ -52,7 +52,7 @@ export default {
                             options: [{
                                 title: 'Met water',
                                 doorContent: 'zwembad klein.svg',
-                                doorOutside: '',
+                                doorOutside: 'zwemsterbadpak.svg',
                                 side: 'left',
                                 audioPath: 'dit is een zwemsport.mp3',
                                 sportsOverviewBackground: 'zwembad',

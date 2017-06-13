@@ -1,7 +1,7 @@
 # Minor Multi Philadelphia Software Guidebook  
 In dit software guidebook is een korte samenvatting van de Sportestic app. Voorafgaand aan de inhoud is er een uitleg hoe de applicatie opgestart moet worden en welke vereisten hiervoor zijn. Vervolgens zijn de requirements weergegeven, gevolgd door een mappenstructuur en de gebruikte libraries. Dit document is een toevoeging bij het Functioneel Ontwerp.
 
-### Versies
+### Versie
 0.3.0
 
 ### Auteurs  
@@ -52,12 +52,14 @@ Hier kunnen assets, pagina volgorde en teksten worden toegevoegd en aangepast.
 * sportsInformation.js: In dit bestand staat een JSON structuur met alle informatie over de verschillende sporten.
 Hier kunnen de video's en teksten worden aangepast die bij een sport worden weergegeven.  
 
-## Installatie
+## Installatie en demo versie
 ```
 git clone https://github.com/bartjanvanommeren/multi-minor-philadelphia.git
 npm install
 npm run start-local
 ```
+
+Een demo Sportestic applicatie draait op een Heroku server. Deze is bereikbaar via http://sportestic.herokuapp.com/.
 
 ## Routes
 ``/`` <br> 
@@ -80,6 +82,3 @@ Libary naam | Versie
 [Express](https://expressjs.com/) | 4.15.3
 [React-Router](https://github.com/ReactTraining/react-router) | 2.8.1
 [React-Youtube](https://github.com/ReactTraining/react-router) | 7.4.0
-
-## Demo versie
-De Sportestic applicatie draait op een Heroku server. Deze is bereikbaar via [http://sportestic.herokuapp.com/].

@@ -50,9 +50,9 @@ export default {
         information: 'Lorem ipsum dolar sit amet'
     },
     "Yoga": {
-        videoId: 'qBEyBvX2Ql4',
+        videoId: '3hI5F0iJCfo',
         playerVars: {
-            start: 60
+            start: 6
         },
         information: 'Lorem ipsum dolar sit amet'
     },
@@ -99,9 +99,9 @@ export default {
         information: 'Lorem ipsum dolar sit amet'
     },
     "Volleybal": {
-        videoId: 'bpz0c81BlrM',
+        videoId: 'nYbXx2ahtao',
         playerVars: {
-            start: 20
+            start: 0
         },
         information: 'Lorem ipsum dolar sit amet'
     },
